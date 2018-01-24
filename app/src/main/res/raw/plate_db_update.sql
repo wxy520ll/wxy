@@ -1,0 +1,1 @@
+alter table "plate_info" add "inblacklist" varchar(50) null default '0'

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ebebeb"
+             >
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/background_light"
+            android:layout_height="40dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="fill_parent"
+                style="@style/tv_search_bg"
+                android:text="街道:"
+             />
+        <TextView
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:hint="请选择街道"
+                style="@style/search_bg"
+                android:id="@+id/tv_choose_jd"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/background_light"
+            android:layout_height="40dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="fill_parent"
+                style="@style/tv_search_bg"
+                android:text="社区:"
+                android:id="@+id/police_name"/>
+        <TextView
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:hint="请选择社区"
+                style="@style/search_bg"
+                android:id="@+id/tv_choose_sq"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/background_light"
+            android:layout_height="40dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="fill_parent"
+                style="@style/tv_search_bg"
+                android:text="网格:"
+                android:id="@+id/jws_name"/>
+        <TextView
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:hint="请选择网格"
+                style="@style/search_bg"
+                android:id="@+id/tv_choose_wg"/>
+    </LinearLayout>
+
+
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:id="@+id/listView3"/>
+
+    <TextView
+            android:id="@+id/empty_data"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="9pt"
+            android:text="本网格没有上传的监控室信息"/>
+
+
+</LinearLayout>

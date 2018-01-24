@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/bg_dark"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/space_2"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"
+    >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="fill_parent"
+                android:text="时间:"
+                style="@style/tv_search_bg"
+        />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:hint="请选择时间"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginRight="20dp"
+                style="@style/search_bg"
+                android:id="@+id/tv_start_date"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"
+    >
+        <TextView
+                android:id="@+id/tv_pcs"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="派出所"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/text_color_black"
+                android:layout_height="match_parent"
+                android:gravity="center"
+        />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+                android:id="@+id/tv_xdzs"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="岗亭总数"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/text_color_black"
+                android:gravity="center"
+        />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+                android:id="@+id/tv_sgs"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="上岗数"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/text_color_black"
+                android:gravity="center"
+        />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+                android:id="@+id/tv_kyjl"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="值守人数"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/text_color_black"
+                android:gravity="center"
+        />
+
+
+    </LinearLayout>
+    <include layout="@layout/textview_fill_width"/>
+</LinearLayout>

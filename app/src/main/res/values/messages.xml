@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+    <string name="app_error">软件出错</string>
+    <string name="app_error_message">很抱歉，软件出现错误，即将退出。\n请提交错误报告，我们会尽快修复这个问题</string>
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
+
+    <string name="load_more">更多</string>
+    <string name="load_empty">""</string>
+
+    <string name="title_username">用户名</string>
+    <string name="title_pwd">密码</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_register">注册</string>
+    <string name="btn_modeify">信息修改</string>
+    <string name="title_new_user_reg">用户注册</string>
+    <string name="title_save_pwd">忘记密码</string>
+
+    <string name="msg_login_name">姓名</string>
+    <string name="msg_login_cardNo">身份证号码</string>
+    <string name="msg_login_account">请输入手机号</string>
+    <string name="msg_login_pwd">请输入密码</string>
+    <string name="msg_login_pwd_confirm">请再输入一次密码确认</string>
+    <string name="msg_reg_account_null">账号不允许为空</string>
+    <string name="msg_reg_account_polno">请用手机号注册</string>
+    <string name="msg_reg_pwd_null">密码不允许为空</string>
+    <string name="msg_reg_pwd_confirm_error">两次输入的密码不一致，请重新输入</string>
+    <string name="msg_session_timeout">当前用户会话已过期，请重新登录</string>
+
+    <string name="msg_check_version_no_network">当前无可用的网络连接，无法检测更新</string>
+    <string name="msg_check_version_wifi_only">只允许在WIFI网络下更新</string>
+
+    <!--短信验证 -->
+    <string name="phone_not_null">手机号码不能为空</string>
+    <string name="sms_not_null">验证码不能为空</string>
+    <string name="sms_submit_success">提交验证码成功</string>
+    <string name="sms_send_success">验证码已经发送</string>
+    <string name="phone_input">请输入11位正确号码</string>
+    <string name="regeist_not_per">您当前没有注册权限，请联系所属派出所管理员！</string>
+    <string name="net_error">当前无可用的网络连接！</string>
+
+
+    <string name="title_about">关于</string>
+    <string name="msg_offline_feedback">当前无可用的网络连接，无法实时接收及发送反馈信息</string>
+
+    <string name="title_update_pwd">修改密码</string>
+    <string name="msg_old_pwd">请输入旧密码</string>
+    <string name="msg_new_pwd">请输入新密码</string>
+    <string name="msg_old_pwd_error">旧密码不正确</string>
+    <string name="msg_new_pwd_null">密码不允许为空</string>
+    <string name="msg_new_pwd_confirm_error">两次输入的密码不一致，请重新输入</string>
+    <string name="btn_modify_pwd">确认修改</string>
+
+    <string name="title_hotcity_offline_map">热门城市列表</string>
+    <string name="title_local_offline_map">已下载列表</string>
+
+    <!-- String[] fieldname = { "车牌号", "车牌颜色", "车牌颜色代码", "车牌类型代码", "整牌可信度", "亮度评价","车牌运动方向", "车牌左上点横坐标", "车牌左上点纵坐标", "车牌右下点横坐标", "车牌右下点纵坐标", "时间","车的亮度", "车的颜色"}; -->
+    <string name="plate_cj">车牌采集</string>
+    <string name="plate_cj_tips">采用拍照模式对车牌进行采集</string>
+    <string name="plate_upload">车牌上传</string>
+    <string name="plate_upload_tips">上传缓存的车牌信息</string>
+    <string name="plate_number">车牌号</string>
+    <string name="plate_manage">车牌管理</string>
+    <string name="plate_manage_tips">对缓存的车牌信息进行管理</string>
+    <string name="plate_count">车牌统计</string>
+    <string name="plate_count_tips">统计采集的车牌信息</string>
+    <string name="plate_color">车牌颜色</string>
+    <string name="plate_color_code">车牌颜色代码</string>
+    <string name="plate_type_code">车牌类型代码</string>
+    <string name="plate_reliability">整牌可信度</string>
+    <string name="plate_brightness_reviews">亮度评价</string>
+    <string name="plate_move_orientation">车牌运动方向</string>
+    <string name="plate_leftupper_pointX">车牌左上点横坐标</string>
+    <string name="plate_leftupper_pointY">车牌左上点纵坐标</string>
+    <string name="plate_rightdown_pointX">车牌右下点横坐标</string>
+    <string name="plate_rightdown_pointY">车牌右下点纵坐标</string>
+    <string name="plate_elapsed_time">时间</string>
+    <string name="plate_light">车的亮度</string>
+    <string name="plate_car_color">车的颜色</string>
+
+    <string name="title_plate">车牌助手</string>
+    <string name="title_plate_manage">车牌管理</string>
+    <string name="msg_delete_confirm_title">删除提示</string>
+    <string name="msg_delete_confirm">确认删除这条记录吗</string>
+    <string name="msg_null">"没有数据"</string>
+
+    <string name="del_yes">"删除成功！"</string>
+    <string name="del">"删除"</string>
+    <string name="save">"缓存"</string>
+    <string name="upload">"上传"</string>
+    <string name="editor">"编辑"</string>
+    <string name="update">更新</string>
+    <string name="commit_agin">重新提交</string>
+    <string name="info_xg">"确定修改"</string>
+    <string name="duty_bb">"报备"</string>
+    <string name="map_sddw">"手动定位"</string>
+    <string name="query">"查询"</string>
+
+
+    <string name="jks">"监控室采集"</string>
+    <string name="jks_tips">"采集监控室信息"</string>
+    <string name="sxt">"摄像头采集"</string>
+    <string name="sxt_tips">"采集摄像头信息"</string>
+    <string name="info_total">"数据统计"</string>
+    <string name="info_total_tips">"统计采集的二三类点数据"</string>
+    <string name="info_check">"信息核查"</string>
+    <string name="info_manage">"信息管理"</string>
+    <string name="info_manage_tips">"管理采集的二三类点数据"</string>
+    <string name="SXTinfo_check">"摄像头核查"</string>
+    <string name="JKSinfo_check">"监控室核查"</string>
+    <string name="SXTinfo_Manage">"摄像头缓存管理"</string>
+    <string name="JKSinfo_Manage">"监控室缓存管理"</string>
+    <string name="SXTinfo_upload_Manage">"摄像头上传管理"</string>
+    <string name="JKSinfo_upload_Manage">"监控室上传管理"</string>
+    <string name="CheckFaile_SXTinfo">"摄像头核查未通过"</string>
+    <string name="CheckFaile_JKSinfo">"监控室核查未通过"</string>
+    <string name="CheckFaile_SXTinfo_Manage">"摄像头核查未通过管理"</string>
+    <string name="CheckFaile_JKSinfo_Manage">"监控室核查未通过管理"</string>
+    <string name="pass_yes">"核查通过"</string>
+    <string name="pass_no">"核查不通过"</string>
+    <string name="check_jks_tips_pass">*请上传监控室全景图一张</string>
+    <string name="position_faile">当前定位失败,请重试！</string>
+    <string name="register_success">注册成功，将进入登录页面！</string>
+    <string name="modify_success">资料完善成功，将进入登录页面！</string>
+    <string name="upload_success">选择已上传的监控室</string>
+    <string name="upload_jks_success">已上传的监控室</string>
+    <string name="watch_jks">查看监控室信息</string>
+    <string name="logout_tips">返回将不会保存您采集的信息！</string>
+    <string name="tips">提示</string>
+    <string name="upload_jks_tips">确定上传缓存在本地的所有监控室信息！</string>
+    <string name="upload_sxt_tips">确定上传缓存在本地的所有摄像头信息！</string>
+    <string name="upload_no_wifi_tips">当前手机没有连接wifi，确定上传将耗费您大量的移动数据流量！</string>
+
+    <!---店铺采集-->
+    <string name="store_sxtzs">摄像头总数</string>
+    <string name="store_sxtzc">摄像头正常数</string>
+    <string name="store_mksxts">门口摄像头数</string>
+    <string name="store_ssjws">所属警务室</string>
+    <string name="store_jkpm">监控屏幕</string>
+    <string name="YES">是</string>
+    <string name="NO">否</string>
+    <string name="ZB">经纬度坐标</string>
+    <string name="upload_store_tips">确定上传缓存在本地的所有采集信息！</string>
+    <string name="sxt_zcs_tips">摄像头正常数不能大于摄像头总数！</string>
+    <string name="mksxt_zcs_tips">门口摄像头正常数不能大于摄像正常数！</string>
+
+
+    <!--人员登记、走访-->
+    <string name="PER_RETURN">人员盘查</string>
+    <string name="PER_RETURN_tips">人员盘查缓存数据管理</string>
+    <string name="PER_RETURN_MANAGE">人员盘查采集管理</string>
+    <string name="PER_RETURN_TOTAL">人员盘查统计</string>
+    <string name="per_bfrxm">人员姓名</string>
+    <string name="per_sfz">人员身份证号</string>
+    <string name="per_dzh">地址</string>
+    <string name="bz">备注</string>
+    <string name="pzjl">拍照记录</string>
+
+
+    <string name="per_sfzh">身份证号</string>
+
+    <!--网吧/网租采集-->
+    <string name="net_cyzxm">从业者姓名</string>
+    <string name="net_cyzsfz">从业者身份证</string>
+    <string name="net_cyzdh">从业者电话</string>
+    <string name="dz">地址</string>
+    <string name="mc">名称</string>
+    <string name="cancel">取消</string>
+
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_footer_hint_finish">数据加载完毕！</string>
+    <string name="total">采集统计</string>
+    <string name="manage">采集管理</string>
+    <string name="total_pcs">派出所统计</string>
+    <string name="total_per_rank">个人上传排名</string>
+    <string name="total_per">个人上传统计</string>
+
+    <string name="zamanage">治安场所</string>
+    <string name="zamanage_tips">治安场所缓存数据管理</string>
+    <string name="zamanage_ed">修改治安场所信息</string>
+    <string name="zajc_total">治安场所信息统计</string>
+    <string name="zamanage_manage">治安场所信息管理</string>
+    <string name="zamanage_watch">查看治安场所信息采集</string>
+    <string name="zacyz">从业者采集</string>
+    <string name="zacyz_watch">查看从业者采集</string>
+    <string name="zaxf">消防信息</string>
+    <string name="zaxf_watch">查看消防信息</string>
+    <string name="zajk">监控信息</string>
+    <string name="zajk_watch">查看监控信息</string>
+    <string name="cjfl">采集分类</string>
+
+
+    <!-- 证件识别 -->
+
+    <!-- Dialog显示 -->
+    <string name="dialog_drawline_recog">划线识别</string>
+    <string name="dialog_drawrang_recog">划框识别</string>
+    <string name="recog_result">--识别结果--</string>
+    <string name="idcard_type">证件类型</string>
+    <string name="failure_not_recog">未识别   代码：</string>
+    <string name="failure_activate">激活失败 代码：</string>
+    <string name="failure_init">识别初始化失败 代码：</string>
+    <string name="failure_load_reload">识别载入图像失败，请重新识别 代码：</string>
+    <string name="failure_load_init_retry">识别载入图像失败，识别初始化失败,请重试 代码：</string>
+    <string name="failure_load">识别载入图像失败 代码：</string>
+    <string name="failure_recog">识别失败 代码：</string>
+    <string name="toast_autofocus_failure">自动对焦失败，请重新拍摄</string>
+    <string name="cut_image_failure">裁剪图片失败</string>
+    <string name="read_file_exception">读取文件异常</string>
+    <string name="recognized_failed">识别服务调用失败</string>
+    <string name="toast_please_retake">请重新拍摄</string>
+    <string name="takepic_btn_string">拍照</string>
+    <string name="backbtn_string">返回</string>
+    <string name="light1_string">开闪关灯</string>
+    <string name="light2_string">关闪关灯</string>
+    <string name="ClosedCutting">关闭裁切</string>
+    <string name="OpenedCutting">打开裁切</string>
+    <string name="unsupport_auto_focus">不支持自动对焦</string>
+    <string name="noFoundProgram">没有找到应用程序</string>
+    <string name="recogResult">识别结果 :证件类型：</string>
+    <string name="exception">未识别   代码：</string>
+    <string name="exception1">激活失败 代码：</string>
+    <string name="exception2">识别初始化失败 代码：</string>
+    <string name="exception3">识别载入图像失败，请重新识别 代码：</string>
+    <string name="exception4">识别载入图像失败，识别初始化失败,请重试 代码：</string>
+    <string name="exception5">识别载入图像失败 代码：</string>
+    <string name="exception6">识别失败 代码：</string>
+    <string name="recogResult1">--识别结果--</string>
+    <string name="backIndex">返回首页</string>
+    <string name="camera_againest">继续拍照</string>
+    <string name="get_data_faile">获取数据失败</string>
+    <!-- 警情采集-->
+
+
+    <string name="za_jksbh">监控室编号</string>
+    <string name="za_mhqsl">灭火器数量</string>
+    <string name="za_zcs">灭火器正常数</string>
+    <string name="info_null">不能为空</string>
+    <string name="za_dqrq">到期日期</string>
+    <string name="za_jyzxm">经营者姓名</string>
+    <string name="za_jyzdh">经营者电话</string>
+    <string name="mhqzcs_tips">灭火器正常数不能大于灭火器数量！</string>
+    <!-- 考勤-->
+    <string name="kq">签到</string>
+    <string name="kq_jl">考勤记录</string>
+    <string name="kq_sb">上班</string>
+    <string name="kq_xb">下班</string>
+
+    <string name="duty_beats">巡逻</string>
+    <string name="duty_beats_setting">巡逻设置</string>
+    <string name="duty_beats_tips">编辑、新增巡逻段、签到点</string>
+    <string name="duty_flights_setting">排班设置</string>
+    <string name="duty_flights_setting_tips">编辑、新增排班规则、勤务班次</string>
+
+    <string name="xl_tips">警务巡逻</string>
+    <string name="duty_police">处警</string>
+    <string name="cj_end">结束处警</string>
+    <string name="cj_tips">警务处警</string>
+    <string name="duty_box">签到点</string>
+    <string name="duty_history">巡逻列表</string>
+    <string name="duty_police_history">处警列表</string>
+    <string name="duty_leader_history">巡长列表</string>
+    <string name="duty_history_item">巡逻详情</string>
+    <string name="xl_tks">开始巡逻</string>
+    <string name="xl_tjs">结束巡逻</string>
+    <string name="duty_point">签到</string>
+    <string name="xl_bb_ks">报备</string>
+    <string name="xl_tj">巡逻统计</string>
+    <string name="xl_lc_tj">巡逻里程统计</string>
+    <string name="xl_lc_tj_tips">按巡逻总里程数统计巡逻数据</string>
+    <string name="xl_zg_tj">巡逻在岗统计</string>
+    <string name="xl_zg_tj_tips">按巡逻在岗人数统计巡逻数据</string>
+    <string name="xl_tj_tips">统计巡逻数据</string>
+    <string name="xl_xz">我是巡长</string>
+    <string name="xl_xztj">巡长统计</string>
+    <string name="xl_xztj_tips">统计巡长数据</string>
+    <string name="xl_xz_tips">统筹调度、指挥、督导巡逻值守工作</string>
+    <string name="xl_ksjc">开始检查</string>
+    <string name="xl_jsjc">结束检查</string>
+    <string name="xl_xzjl">巡长记录</string>
+    <string name="xl_xzmessage">领导:\n您好，您是今天的巡长，负责统筹调度、指挥、督导本单位巡逻值守勤务工作，参与巡逻及检查不少于2小时!</string>
+
+    <string name="duty_setting">勤务设置</string>
+    <string name="qw_workcheck">勤务督查</string>
+    <string name="duty_total">勤务统计</string>
+    <string name="qw_workcheck_history">督查记录</string>
+    <string name="qw_total">督查统计</string>
+    <string name="qw_total_tips">统计督查数据</string>
+    <!-- 选点系统-->
+    <string name="duty_beats_add">添加巡逻段</string>
+    <string name="duty_beats_editor">修改巡逻段</string>
+    <string name="duty_box_editor">修改签到点</string>
+    <string name="duty_flight_rules">排班规则</string>
+    <string name="duty_flight_rules_edt">修改排班规则</string>
+    <string name="duty_flight_rules_add">添加排班规则</string>
+    <string name="duty_flight">勤务班次</string>
+    <string name="duty_flight_edt">修改勤务班次</string>
+    <string name="duty_flight_add">添加勤务班次</string>
+    <string name="duty_box_add">添加签到点</string>
+    <string name="duty_report_start">报备</string>
+    <string name="duty_report_end">结束报备</string>
+    <string name="duty_flight_data">勤务班次数据为空</string>
+
+
+    <!--巡逻级别-->
+    <string-array name="duty_level">
+      <!--  <item>一级</item>-->
+        <item>二级</item>
+        <item>三级</item>
+    <!--  <item>视频</item>
+    <item>春运巡段</item>-->
+</string-array>
+<!--巡逻方式-->
+    <string-array name="duty_type">
+        <item>徒步</item>
+        <item>GPS车辆</item>
+        <item>摩托车</item>
+        <item>视频</item>
+        <item>电瓶车</item>
+        <item>自行车</item>
+        <item>其他</item>
+    </string-array>
+    <!--排班规则类型-->
+    <string-array name="duty_rulesduty">
+        <item>巡段</item>
+        <item>防控点</item>
+        <item>重点区域</item>
+    </string-array>
+    <!--岗亭类别-->
+    <string-array name="duty_plate_type">
+        <item>市级治安卡点</item>
+        <item>区级治安卡点</item>
+        <item>重点区域</item>
+        <item>各派出所所际卡点</item>
+        <item>一级防控点</item>
+        <item>二级防控点</item>
+        <item>三级防控点</item>
+    </string-array>
+
+
+    <string name="plc_sttn_startwork">开始值守</string>
+    <string name="plc_sttn_manager_tips">编辑、新增卡点数据</string>
+    <string name="plc_sttn_map">卡点地图</string>
+    <string name="plc_setting">卡点设置</string>
+    <string name="plc_sttn_map_tips">卡点分布图</string>
+    <string name="plc_sttn_zs">卡点值守</string>
+    <string name="plc_sttn_zs_tips">卡点日常值守</string>
+    <string name="plc_sttn_tj">卡点统计</string>
+    <string name="plc_sttn_tj_tips">卡点数据统计</string>
+    <string name="loading">加载中</string>
+    <string name="load_finish">加载完成</string>
+    <string name="plc_bx_info">卡点详情</string>
+    <string name="plc_bx_cj">卡点采集</string>
+    <string name="plc_bx_history">值守记录</string>
+    <string name="plc_bx_history_xq">值守详情</string>
+    <string name="plc_bx_cj_list">卡点列表</string>
+    <string name="plc">卡点防控</string>
+    <string name="plc_bx_map">卡点地图</string>
+    <string name="start_working_plc_bx">开始值守</string>
+    <string name="ending_work_plc_bx">结束值守</string>
+    <string name="contin_work_plc_bx">继续值守</string>
+    <string name="sz_work_plc_bx">擅自离守</string>
+    <string name="bb_work_plc_bx">离岗报备</string>
+    <string name="plc_bx_update">更新</string>
+    <string name="plc_bx_leaving">离岗中</string>
+    <string name="plc_dstrbt_map">地图展示</string>
+    <string name="polic_map">警力分布</string>
+    <string name="xl_cj">处警记录</string>
+    <string name="xl_kscj">开始处警</string>
+    <!-- 市局要求报备功能屏蔽 提示-->
+
+    <!-- 出租屋核查-->
+    <string name="house_info">出租屋信息</string>
+    <string name="house_info_tips">统计出租屋信息已上传数据</string>
+    <string name="house">出租屋核查</string>
+    <string name="house_total">出租屋统计</string>
+    <string name="house_ldbm">楼栋编码</string>
+    <string name="house_police">执法办案</string>
+    <string name="house_police_jf">出租屋解封</string>
+    <string name="house_zh">出租屋（企业、工厂）是否开通居住登记账号</string>
+    <string name="house_lb">出租屋类别</string>
+    <!-- 出租屋核查  人防-->
+    <string name="house_rf">人    防</string>
+    <string name="house_wymc">物业名称</string>
+    <string name="house_lds">住宅楼栋数</string>
+    <string name="house_basl">保安员数量</string>
+    <string name="house_mgsl">门岗数量</string>
+    <string name="house_xlbasl">巡逻保安人数</string>
+    <string name="house_pbqk">保安排班情况</string>
+    <string name="house_zsqk">保安值守情况</string>
+    <string name="house_ssgl">宿舍管理情况</string>
+
+    <string name="house_wf">物    防</string>
+    <string name="house_sffdm">是否安装防盗门</string>
+    <string name="house_sfbjs">锁芯是否B级锁</string>
+    <string name="house_sfpc">排水管是否安装爬刺和涂抹黄油</string>
+
+
+    <string name="house_sfwy">是否有物业公司管理</string>
+    <string name="house_sffwz">是否配置楼栋服务站</string>
+    <string name="house_sfyzgl">是否业主管理</string>
+    <string name="house_sfgly">是否有管理员</string>
+    <string name="house_sfldz">是否配置楼栋长</string>
+
+    <string name="house_xf">消    防</string>
+    <string name="house_sfxf">房屋是否有消防器材</string>
+    <string name="house_sfmhq">是否有灭火器</string>
+    <string name="house_sfzmd">是否有应急照明灯</string>
+    <string name="house_sfsf">消防水阀是否完好</string>
+
+    <string name="house_jf">技    防</string>
+    <string name="house_ttsl">公共区域探头数量</string>
+    <string name="house_gqsl">高清探头数量</string>
+    <string name="house_mjshsl">门禁损坏数量</string>
+    <string name="house_ptsl">普通探头数量</string>
+    <string name="house_spshsl">视频损坏数量</string>
+    <string name="house_sftt">周围外墙是否安装探头</string>
+    <string name="house_sfbj">是否安装与派出所联网的一键报警</string>
+    <string name="house_sfspmj">是否安装视频门禁</string>
+    <string name="house_sfdjmj">是否安装单机视频门禁</string>
+    <string name="house_lxbcsj">录像资料保存时间</string>
+    <string name="house_sfsxsk">门禁是否双向刷卡</string>
+    <!--执法办案-->
+    <string name="house_tzbadz">是否停租案件办理地址</string>
+    <string name="house_jzzbzdz">是否居住登记执法地址</string>
+    <string name="house_tzzdlz">是否停租整栋楼</string>
+    <string name="house_tztj">是否停租套间</string>
+    <string name="house_tztjfh">停租套间房号</string>
+    <string name="house_rycf">是否对人员信息做处罚</string>
+    <string name="house_jzzf">是否对人员信息做居住执法</string>
+    <string name="house_cfdx">处罚对象</string>
+    <string name="house_cfdxmz">处罚对象名字</string>
+    <string name="house_cfdxsfzhm">处罚对象身份证号码</string>
+    <string name="house_cfxx">处罚信息</string>
+
+    <!--队员薪资查询-->
+    <string name="salary_query">薪资查询</string>
+    <string name="salary_month">时间</string>
+    <string name="salary_name">名字</string>
+    <string name="salary_dep">部门</string>
+    <string name="salary_post_name">职务</string>
+    <string name="salary_job_name">岗位</string>
+    <string name="salary_bank_number">银行账号</string>
+    <string name="salary_leave_deduct_monet">请假扣款</string>
+    <string name="salary_special_wage">特殊工资</string>
+    <string name="salary_work_wage">工龄工资</string>
+    <string name="salary_cold_allowance">降温津贴</string>
+    <string name="salary_post_allowance">职务津贴</string>
+    <string name="salary_overtime_wage">加班工资</string>
+    <string name="salary_timing_wage">正时工资</string>
+    <string name="salary_job_wage">岗位工资</string>
+    <string name="salary_income_tax_money">个人所得税</string>
+    <string name="salary_personal_fund_money">公积金个人扣款</string>
+    <string name="salary_social_security_money">社保个人扣款</string>
+    <string name="salary_after_tax_wage">税后工资</string>
+    <string name="salary_hollday_overtime_money">节假日工资</string>
+    <string name="salary_should_get_wage">应发工资</string>
+    <string name="salary_performance_wage">绩效工资</string>
+    <string name="salary_performance_allowance">绩效津贴</string>
+    <string name="salary_moto_tax_money">摩托车费用</string>
+    <string name="salary_real_all_money">当月合计</string>
+
+
+    <!-- 安全管理-->
+    <string name="safety_manage">网络安全管理</string>
+    <string name="safety_study">网络安全学习</string>
+    <string name="safety_check">网络安全考核</string>
+    <string name="safety_approval">施工申请</string>
+    <string name="safety_approval_check">施工审批</string>
+    <string name="safety_approval_watch">施工确认</string>
+    <string name="machine_room_manage">机房管理</string>
+    <string name="machine_room_enter">进入机房</string>
+    <string name="machine_room_quick">离开机房</string>
+    <string name="machine_room_time">进入机房时间</string>
+    <string name="machine_pcs_list">单位机房列表</string>
+    <string name="machine_person_list">机房管理员列表</string>
+    <string name="organname">单位名称</string>
+    <string name="machine_name">机房名称</string>
+    <string name="machine_gly">管理员</string>
+    <string name="machine_jfdj">出入登记</string>
+    <string name="machine_room_type">施工类型</string>
+    <string name="machine_check_person">审批人</string>
+    <string name="machine_sq_xm">申请人姓名</string>
+    <string name="machine_sq_dh">申请人电话</string>
+    <string name="machine_sq_dqsj">施工完成时间</string>
+    <string name="machine_sq_gs">施工单位</string>
+    <string name="refist_company">公司注册</string>
+    <string name="refist_company_tips">第三方公司人员注册</string>
+    <string name="refist_police">警务注册</string>
+    <string name="refist_police_tips">民警、辅警、巡防员、综管员等</string>
+
+
+    <string name="oncecamera">网络信息安全</string>
+    <string name="kpi">数字证书</string>
+    <string name="kpi_study">数字证书学习</string>
+    <string name="kpi_check">数字证书考核</string>
+    <string name="kpi_record">数字证书备案</string>
+    <string name="entryandexitapproval">出入证申请</string>
+
+    <!--提审预约-->
+    <string name="ttys">提审预约</string>
+    <string name="ttyss">提审室预约</string>
+    <string name="tsy_pd">现场排队</string>
+    <string name="tsy_pd_tips">提审室现场排队</string>
+    <string name="tsy_jl">提审记录</string>
+    <string name="tsy_jl_tips">提审历史记录</string>
+    <string name="tsys_jl">预约记录</string>
+
+    <string name="tsys_qx_tips">很抱歉，您申请的提审预约30分钟内即将开始或已经在预约时间范围内，取消失败</string>
+
+    <string name="tsys_sq_tips">很抱歉，您申请的提审预约时间段已过期，申请失败</string>
+    <string name="tsys_sq_tips1">很抱歉，上午9:00以后不可以再预约当天上午的提审室，申请失败</string>
+    <string name="tsys_sq_tips2">很抱歉，下午14:00之后不可以再预约当天下午的提审室，申请失败</string>
+
+
+    <string name="tsys_tips1">1.提审室预约可提前5个工作日预约，至少提前半个小时以上预约，上午9:00以后不可以再预约当天上午的提审室，下午14:00之后不可以再预约当天下午的提审室;</string>
+    <string name="tsys_tips2">2.可预约时间为（上午:9:00、10:00、11:00；下午:14:00、15:00、16:00)，每人上午、下午只能预约一次，每个房间上午和下午也只能预约一次；</string>
+    <string name="tsys_tips3">3.取消提审预约至少提前半个小时;</string>
+    <string name="tsys_tips4">4.超过预约时间15分钟未到者，将取消预约资格，并计入失信人员名单;</string>
+    <string name="tsys_tips5">5.未预约到提审房间的或者有临时提审需求的，也可以到看守所现场排号，由看守所安排少量机动和空余时段提审室给民警用来提审;</string>
+
+
+    <string name="jdwljl">核查记录</string>
+    <string name="jdwlhc">寄递物流核查</string>
+    <string name="jdwlhc_sfkxys">收件是否开箱验视</string>
+    <string name="jdwlhc_sfsmsj">收件是否实名</string>
+    <string name="jdwlhc_sfryxxcj">从业人员是否到公安机关进行人员信息采集</string>
+    <string name="jdwlhc_sfczsg">工作人员是否持证上岗</string>
+    <string name="jdwlhc_sfanpx">是否开展安全培训活动</string>
+    <string name="jdwlhc_sfaazd">是否落实内部安保制度</string>
+    <string name="jdwlhc_sfxczl">是否张贴有奖举报等宣传资料</string>
+    <string name="jdwlhc_sfjkbc">视频监控是否安装并至少保存30天</string>
+    <string name="jdwlhc_sfxgjc">中转站、集散仓库是否有X光机检查</string>
+    <string name="jdwlhc_sfgsazapp">寄递公司是否安装快递卫士APP</string>
+    <string name="jdwlhc_sfryazapp">寄递公司从业人员是否全部安装快递卫士APP</string>
+    <string name="jdwlhc_sfappsj">是否按要求使用快递卫士APP收件</string>
+    <string name="info_upload_success">数据上传成功</string>
+
+    <string name="gj_map">轨迹地图</string>
+
+    <string name="coll_tips">龙岗协警助手采集的缓存数据未上传之前请不要使用360、手机安全管家等清除缓存，避免因采集图片被清除而无法上传数据！</string>
+
+
+</resources>

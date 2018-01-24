@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_75"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:background="@drawable/top_main_cj_tj"/>
+
+        <LinearLayout
+            android:id="@+id/ll_cp_count"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_75"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_onclick"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dr_total"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_20"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_45"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_onclick">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/plate_count"
+                            android:textColor="@color/text_black"
+                            android:background="@drawable/bg_onclick"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textSize="@dimen/text_size_18"
+                            android:layout_height="0dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/plate_count_tips"
+                            android:textColor="@color/text_dark"
+                            android:background="@drawable/bg_onclick"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textSize="@dimen/text_size_12"
+                            android:layout_height="0dp"/>
+
+                </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pre"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_55"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_onclick"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dr_prereturn"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_20"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_45"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_onclick">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_onclick">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/PER_RETURN"
+                                    android:textColor="@color/text_black"
+                                    android:background="@drawable/bg_onclick"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/space_20"
+                                    android:textSize="@dimen/text_size_18"
+                                    android:layout_height="match_parent"/>
+                                <TextView
+                                    android:id="@+id/tv_pre"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_onclick"
+                                    android:gravity="center_vertical"
+                                    android:textSize="@dimen/text_14sp"
+                                    android:textColor="@android:color/holo_red_light"
+                                    android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="统计人员盘查已上传数据"
+                            android:textColor="@color/text_dark"
+                            android:background="@drawable/bg_onclick"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textSize="@dimen/text_size_12"
+                            android:layout_height="0dp"/>
+
+                </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_zajc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_55"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_onclick"
+            >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dr_zajc"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_20"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_onclick">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_onclick">
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/zamanage"
+                                    android:textColor="@color/text_black"
+                                    android:background="@drawable/bg_onclick"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/space_20"
+                                    android:textSize="@dimen/text_size_18"
+                                    android:layout_height="match_parent"/>
+                                <TextView
+                                    android:id="@+id/tv_zajc"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_onclick"
+                                    android:gravity="center_vertical"
+                                    android:textSize="@dimen/text_14sp"
+                                    android:textColor="@android:color/holo_red_light"
+                                    android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="统计治安基础已上传数据"
+                            android:textColor="@color/text_dark"
+                            android:background="@drawable/bg_onclick"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textSize="@dimen/text_size_12"
+                            android:layout_height="0dp"/>
+
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_house"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_55"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_onclick">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dr_house"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_20"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_onclick">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/space_45"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_onclick">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/bg_onclick">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:text="@string/house_info"
+                                            android:textColor="@color/text_black"
+                                            android:background="@drawable/bg_onclick"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="@dimen/space_20"
+                                            android:textSize="@dimen/text_size_18"
+                                            android:layout_height="match_parent"/>
+                                        <TextView
+                                            android:id="@+id/tv_house"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/bg_onclick"
+                                            android:gravity="center_vertical"
+                                            android:textSize="@dimen/text_14sp"
+                                            android:textColor="@android:color/holo_red_light"
+                                            android:layout_height="match_parent"/>
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="@string/house_info_tips"
+                                    android:textColor="@color/text_dark"
+                                    android:background="@drawable/bg_onclick"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="@dimen/space_20"
+                                    android:textSize="@dimen/text_size_12"
+                                    android:layout_height="0dp"/>
+
+                        </LinearLayout>
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

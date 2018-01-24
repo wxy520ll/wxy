@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="1dp"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_mc"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/space_12"
+            />
+
+        <TextView
+            android:id="@+id/tv_gly"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="暂未设置管理员，请点击添加"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/space_12"
+            />
+
+
+</LinearLayout>

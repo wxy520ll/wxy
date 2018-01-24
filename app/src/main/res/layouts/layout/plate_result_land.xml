@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+    <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:visibility="gone" />
+
+    <LinearLayout
+            android:id="@+id/layout_plate_detail"
+            style="@android:style/Theme.Holo.Light.Panel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+            <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" >
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_top_corner_no_bottom_line" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="10dip"
+                            android:text="车牌照片"
+                            android:textColor="#000000" >
+                    </TextView>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_no_corner_without_bottom" >
+
+                    <ImageView
+                            android:id="@+id/plate_image"
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="车牌照片"
+                            android:src="@android:drawable/gallery_thumb" />
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_bottom_corner_no_top_line" >
+
+                    <Button
+                            android:id="@+id/btn_zoom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:textSize="@dimen/text_size_12"
+                            android:text="点击看大图"
+                            android:textColor="@color/white"
+                            android:background="@drawable/bg_coner_green" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:padding="10dip"
+                    android:scrollbars="vertical" >
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_top_corner_no_bottom_line" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dip"
+                            android:text="采集车牌"
+                            android:textColor="#000000" >
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#000000" />
+
+                    <EditText
+                            android:id="@+id/plate_info_number"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:enabled="false"
+                            android:hint="识别车牌中..."
+                            />
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/shape_no_corner_without_bottom" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dip"
+                            android:text="车牌颜色"
+                            android:textColor="#000000" >
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#000000" />
+
+                    <TextView
+                            android:id="@+id/plate_info_color"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:hint=""
+                            android:padding="8dip" />
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/shape_no_corner_without_bottom" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dip"
+                            android:text="可信度"
+                            android:textColor="#000000" >
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#000000" />
+
+                    <TextView
+                            android:id="@+id/plate_info_accuracy"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:hint=""
+                            android:padding="8dip" />
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/shape_no_corner_without_bottom"
+                        android:showDividers="middle"
+                        android:visibility="gone" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dip"
+                            android:text="采集时间"
+                            android:textColor="#000000" >
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#000000" />
+
+                    <TextView
+                            android:id="@+id/plate_info_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:background="@null"
+                            android:padding="8dip"
+                            android:text=""
+                            android:textColor="#000000" >
+                    </TextView>
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/shape_no_corner_without_bottom" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dip"
+                            android:text="采集基站"
+                            android:textColor="#000000" >
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#000000" />
+
+                    <TextView
+                            android:id="@+id/plate_info_callid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:gravity="top"
+                            android:hint=""
+                            android:padding="8dip" />
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/shape_no_corner_without_bottom" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dip"
+                            android:text="采集坐标"
+                            android:textColor="#000000" >
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#000000" />
+
+                    <TextView
+                            android:id="@+id/plate_info_gps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:hint="正在定位..."
+                            android:padding="8dip" />
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/shape_no_corner_without_bottom" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dip"
+                            android:text="采集地点"
+                            android:textColor="#000000" >
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#000000" />
+
+                    <TextView
+                            android:id="@+id/plate_info_address"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:hint="正在定位..."
+                            android:lines="2"
+                            android:padding="8dip"
+                            android:singleLine="false" />
+                </TableRow>
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/shape_bottom_corner_no_top_line" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="7dip"
+                            android:text="手动定位"
+                            android:textColor="#000000" >
+                    </TextView>
+
+                    <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#000000" />
+
+                    <Button
+                            android:id="@+id/btn_map_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:padding="7dip"
+                            android:text="地图选取坐标"
+                            android:textSize="@dimen/text_size_12"
+                            android:textColor="@color/white"
+                            android:background="@drawable/bg_coner_green"
+                            />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="2.0dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+            <Button
+                    android:id="@+id/btn_plate_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存"
+                    android:background="@drawable/bg_coner_green"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12"
+                    />
+
+            <Button
+                    android:id="@+id/btn_plate_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="取消"
+                    android:background="@drawable/bg_coner_red"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

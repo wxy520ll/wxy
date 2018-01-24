@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/bg_dark"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_pcs"
+        android:visibility="gone"
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:paddingBottom="2dp"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="fill_parent"
+            android:text="派出所:"
+            style="@style/tv_search_bg"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:hint="请选择派出所"
+            android:textSize="@dimen/text_size_12"
+            android:layout_marginRight="20dp"
+            style="@style/search_bg"
+            android:id="@+id/tv_choose_pcs"/>
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"></include>
+
+    <LinearLayout
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:paddingBottom="2dp"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="fill_parent"
+            android:text="时间:"
+            style="@style/tv_search_bg"
+            android:id="@+id/choose_start_date"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:hint="请选择时间"
+            android:textSize="@dimen/text_size_12"
+            android:layout_marginRight="20dp"
+            style="@style/search_bg"
+            android:id="@+id/tv_choose_date"/>
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"></include>
+
+
+    <LinearLayout
+        android:id="@+id/top_title"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/background_light"
+        >
+        <TextView
+            android:id="@+id/tv_pcs"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="派出所"
+            android:textSize="@dimen/space_12"
+            android:textColor="@color/text_color_black"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+            android:id="@+id/tv_xdzs"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="巡长"
+            android:textSize="@dimen/space_12"
+            android:textColor="@color/text_color_black"
+            android:gravity="center"
+            />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+            android:id="@+id/tv_sgs"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="检查时间"
+            android:textSize="@dimen/space_12"
+            android:textColor="@color/text_color_black"
+            android:gravity="center"
+            />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+            android:id="@+id/tv_kyjl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="最后一次操作时间"
+            android:textSize="@dimen/space_12"
+            android:textColor="@color/text_color_black"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/textview_fill_width"/>
+</LinearLayout>

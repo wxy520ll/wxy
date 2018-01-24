@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".v527.presentation.home.cj.rycj.RycjPreActivity">
+
+    <include layout="@layout/comm_include_toolbar"></include>
+
+
+    <LinearLayout
+        android:id="@+id/rycj"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_75"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_onclick">
+
+        <ImageView
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:src="@drawable/icon_rypc"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_20"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_45"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_onclick">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="人员盘查"
+                android:textColor="@color/text_black"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:textSize="@dimen/text_size_18"
+                android:layout_height="0dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llqt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_75"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_onclick">
+
+        <ImageView
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:src="@drawable/icon_qgpc"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_20"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_45"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_onclick">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="流浪乞讨人员"
+                android:textColor="@color/text_black"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:textSize="@dimen/text_size_18"
+                android:layout_height="0dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lljsb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_75"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_onclick">
+
+        <ImageView
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:src="@drawable/icon_jsbpc"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_20"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_45"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_onclick">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="流浪精神病人员"
+                android:textColor="@color/text_black"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:textSize="@dimen/text_size_18"
+                android:layout_height="0dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

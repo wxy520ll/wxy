@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/space_45">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_import_text"
+                        android:text="楼栋编号"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <EditText
+                        android:id="@+id/et_ldbh"
+                        android:inputType="number"
+                        android:hint="请输入楼栋编号"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_boom"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_height="@dimen/space_40">
+
+        <Button
+            android:id="@+id/btn_upl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/house"
+            android:layout_marginLeft="0.5dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_light"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

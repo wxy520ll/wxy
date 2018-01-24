@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <cn.net.xinyi.xmjt.v527.widget.SelectDayView
+        android:id="@+id/select_jkdt"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        app:select_content="7天,15天,30天"
+        app:select_title="警格动态" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/divide_line" />
+
+    <com.gongwen.marqueen.SimpleMarqueeView
+        android:id="@+id/simpleMarqueeView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/white"
+        android:flipInterval="5000"
+        android:inAnimation="@anim/in_bottom"
+        android:outAnimation="@anim/out_top"
+        app:marqueeAnimDuration="2000"
+        app:smvTextColor="@color/black"
+        app:smvTextGravity="center_vertical"
+        app:smvTextSize="12sp" />
+
+</LinearLayout>

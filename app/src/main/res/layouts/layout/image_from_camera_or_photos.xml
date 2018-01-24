@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <RelativeLayout
+            android:id="@+id/rl_selected_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#a0000000"
+            android:clickable="true"
+            android:descendantFocusability="afterDescendants"
+            android:visibility="gone" >
+
+        <LinearLayout
+                android:id="@+id/ll_selected_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+            <TextView
+                    android:id="@+id/selected_image_from_camera"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="相机"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="18sp" />
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#CFCFCF" />
+
+            <TextView
+                    android:id="@+id/selected_image_from_file"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="从相册中选择"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="18sp" />
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:background="#CFCFCF" />
+
+            <TextView
+                    android:id="@+id/selected_image_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

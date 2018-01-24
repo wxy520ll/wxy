@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_include_toolbar"></include>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.xinyi_tech.comm.form.FormLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            app:comm_fieldMinHeight="48dp"
+            app:comm_formDivided="true"
+            app:comm_labelBgColor="@color/comm_white">
+
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_TEXTVIEW"
+                app:comm_field_name="NAME"
+                app:comm_label_name="姓名" />
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_field_name="USERNAME"
+                app:comm_label_name="手机">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/img_call"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/icon_dh"/>
+
+                    <ImageView
+                        android:id="@+id/img_dx"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/icon_dx" />
+                </LinearLayout>
+
+
+            </com.xinyi_tech.comm.form.FieldView>
+
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_TEXTVIEW"
+                app:comm_field_name="ACCOUNTTYPE"
+                app:comm_label_name="类型" />
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_TEXTVIEW"
+                app:comm_field_name="ORGANNAME"
+                app:comm_label_name="单位" />
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_TEXTVIEW"
+                app:comm_field_name="ORGANCODE"
+                app:comm_label_name="单位代码" />
+
+        </com.xinyi_tech.comm.form.FormLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

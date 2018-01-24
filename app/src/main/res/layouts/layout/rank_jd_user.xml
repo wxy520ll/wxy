@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ebebeb"
+             >
+
+    <LinearLayout
+            android:id="@+id/ll_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingBottom="2dp"
+            android:background="@android:color/background_light"
+            >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="fill_parent"
+                android:text="开始时间:"
+                style="@style/tv_search_bg"
+                android:id="@+id/choose_start_date"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:hint="请选择"
+                android:layout_marginRight="20dp"
+                style="@style/search_bg"
+                android:textSize="@dimen/text_size_12"
+                android:id="@+id/tv_choose_start_date"/>
+    </LinearLayout>
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            layout="@layout/textview_fill_width"></include>
+
+    <LinearLayout
+            android:id="@+id/ll_month"
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"
+            >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="fill_parent"
+                android:text="结束时间 :"
+                style="@style/tv_search_bg"
+                android:id="@+id/choose_end_date"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:hint="请选择"
+                android:layout_marginRight="20dp"
+                style="@style/search_bg"
+                android:textSize="@dimen/text_size_12"
+                android:id="@+id/tv_choose_end_date"/>
+    </LinearLayout>
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            layout="@layout/textview_fill_width"></include>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:background="@android:color/background_light"
+            android:layout_height="40dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.35"
+                android:layout_height="fill_parent"
+                style="@style/tv_search_bg"
+                android:text="街道:"
+                />
+        <TextView
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:hint="请选择街道"
+                style="@style/search_bg"
+                android:textSize="@dimen/text_size_12"
+                android:id="@+id/tv_choose_jd"/>
+    </LinearLayout>
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            layout="@layout/textview_fill_width"></include>
+
+
+    <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/background_light"
+            >
+        <TextView
+                android:id="@+id/rank"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:text="名次"
+                android:textColor="@color/text_color_black"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+                android:id="@+id/company"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="用户名"
+                android:textColor="@color/text_color_black"
+                android:gravity="center"
+                />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="match_parent"
+                android:text="姓名"
+                android:textColor="@color/text_color_black"
+                android:gravity="center"
+                />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+                android:id="@+id/completed_number"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="match_parent"
+                android:text="上传量"
+                android:textColor="@color/text_color_black"
+                android:gravity="center"
+                />
+
+    </LinearLayout>
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            layout="@layout/textview_fill_width"></include>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:id="@+id/listView3"/>
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_15"
+            android:background="@drawable/dr_prereturn"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="4dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_marginLeft="3dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/text_size_12"
+                        android:gravity="center_vertical"
+                        android:text="@string/net_cyzxm"/>
+                    <TextView
+                        android:id="@+id/tv_cyzxm"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/text_size_12"
+                        android:text=""/>
+
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/text_size_12"
+                        android:gravity="center_vertical"
+                        android:text="@string/net_cyzsfz"/>
+                    <TextView
+                        android:id="@+id/tv_cyzdh"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/text_size_12"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:layout_height="match_parent"
+                        android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_del"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"
+            android:text="@string/del"
+            android:textSize="@dimen/text_size_15"
+            android:focusable="false"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>

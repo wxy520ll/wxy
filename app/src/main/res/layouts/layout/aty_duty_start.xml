@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_dark">
+    <RelativeLayout
+            android:id="@+id/rl_addfoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ListView
+                android:id="@+id/lv_list"
+                android:layout_marginBottom="@dimen/space_40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+        >
+        </ListView>
+
+        <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/space_40"
+                layout="@layout/include_empty_data"></include>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_alignParentBottom="true"
+                      android:layout_height="40dp"
+                      android:orientation="horizontal">
+            <LinearLayout
+                    android:id="@+id/ll_boom"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light"
+            >
+
+                <Button
+                        android:id="@+id/btn_ks"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/xl_tks"
+                        android:background="@android:color/holo_green_light"
+                        android:textColor="@android:color/white"
+                />
+                <Button
+                        android:id="@+id/btn_js"
+                        android:layout_width="0dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/xl_tjs"
+                        android:background="@android:color/holo_green_light"
+                        android:textColor="@android:color/white"
+                />
+
+                <Button
+                        android:id="@+id/btn_bb"
+                        android:visibility="gone"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/duty_report_start"
+                        android:background="@android:color/holo_orange_dark"
+                        android:layout_marginLeft="0.5dp"
+                        android:textColor="@android:color/white"
+                />
+                <Button
+                        android:id="@+id/btn_bb_end"
+                        android:visibility="gone"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/duty_report_end"
+                        android:background="@android:color/holo_orange_dark"
+                        android:layout_marginLeft="0.5dp"
+                        android:textColor="@android:color/white"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

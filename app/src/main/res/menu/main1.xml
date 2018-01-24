@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/action_list1"
+        android:title="title"
+        android:orderInCategory="80"
+        android:showAsAction="always"
+        android:actionLayout="@layout/menu_action_album_edit"
+        >
+    </item>
+
+</menu>

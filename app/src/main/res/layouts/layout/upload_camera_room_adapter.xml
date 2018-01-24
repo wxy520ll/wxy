@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_dark"
+        >
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:orientation="horizontal"
+                  android:layout_marginBottom="@dimen/space_1"
+                  android:background="@android:color/background_light"
+            >
+        <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/dr_jks"/>
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="vertical"
+                    >
+
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_weight="0.8"
+                              android:layout_height="0dp"
+                              android:orientation="horizontal"
+                        >
+
+                    <TextView android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="0.4"
+                              android:layout_marginLeft="5dp"
+                              android:textSize="@dimen/text_size_12"
+                              android:gravity="center_vertical"
+                              android:text="采集地点"/>
+                    <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:textSize="@dimen/text_size_12"
+                            android:layout_height="match_parent"
+                            android:text="南山科技园"/>
+
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_weight="0.8"
+                              android:layout_height="0dp"
+                              android:orientation="horizontal"
+                        >
+
+                    <TextView android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="0.4"
+                              android:layout_marginLeft="5dp"
+                              android:textSize="@dimen/text_size_12"
+                              android:gravity="center_vertical"
+                              android:text="采集时间"/>
+                    <TextView
+                            android:id="@+id/tv_cjsj"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="1dp"
+                            android:textSize="@dimen/text_size_12"
+                            android:layout_height="match_parent"
+                            android:text=""/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.8"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        >
+
+
+                    <TextView android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="0.4"
+                              android:layout_marginLeft="5dp"
+                              android:textSize="@dimen/text_size_12"
+                              android:text="监控室名称"/>
+                    <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/text_size_12"
+                            android:layout_height="match_parent"
+                            android:text="现代大厦"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

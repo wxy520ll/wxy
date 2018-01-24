@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:background="@color/bg_dark"
+              android:layout_height="match_parent">
+
+
+        <TextView android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="12dp"
+                  android:text="本地缓存管理："
+                  android:layout_marginRight="5dp"
+                  android:background="@color/bg_dark"
+                  android:layout_height="@dimen/height_40dip"/>
+
+        <TextView
+                android:id="@+id/JKSinfo_Manage"
+                android:layout_width="match_parent"
+                android:text="@string/JKSinfo_Manage"
+                style="@style/info_main"
+                android:layout_height="55dp"/>
+        <TextView
+                android:id="@+id/SXTinfo_Manage"
+                android:layout_width="match_parent"
+                android:text="@string/SXTinfo_Manage"
+                style="@style/info_main"
+                android:layout_height="55dp"/>
+
+
+        <TextView android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="12dp"
+                  android:text="已上传管理："
+                  android:layout_marginRight="5dp"
+                  android:background="@color/bg_dark"
+                  android:layout_height="@dimen/height_40dip"/>
+
+        <TextView
+                android:id="@+id/JKSinfo_upload_Manage"
+                android:layout_width="match_parent"
+                android:text="@string/JKSinfo_upload_Manage"
+                style="@style/info_main"
+                android:layout_height="55dp"/>
+
+        <TextView
+                android:id="@+id/SXTinfo_upload_Manage"
+                android:layout_width="match_parent"
+                android:text="@string/SXTinfo_upload_Manage"
+                style="@style/info_main"
+                android:layout_height="55dp"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="12dp"
+                  android:text="核查未通过管理："
+                  android:layout_marginRight="5dp"
+                  android:background="@color/bg_dark"
+                  android:layout_height="@dimen/height_40dip"/>
+
+        <TextView
+                android:id="@+id/CheckFaile_JKS_Manage"
+                android:layout_width="match_parent"
+                android:text="@string/CheckFaile_JKSinfo_Manage"
+                style="@style/info_main"
+                android:layout_height="55dp"/>
+
+        <TextView
+                android:id="@+id/CheckFaile_SXT_Manage"
+                android:layout_width="match_parent"
+                android:text="@string/CheckFaile_SXTinfo_Manage"
+                style="@style/info_main"
+                android:layout_height="55dp"/>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_95"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_45"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="查询日期"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginRight="2dp"
+                android:background="@android:color/background_light"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_cxrq"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint=" 请输入查询日期"
+                android:inputType="number"
+                android:textSize="@dimen/text_size_12"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:background="@android:color/background_light"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/divider_horizontal_line" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="身份证号码"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginRight="2dp"
+                android:background="@android:color/background_light"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/et_sfzhm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint=" 请输入身份证号码"
+                android:maxLength="18"
+                android:inputType="number"
+                android:digits="0123456789xX"
+                android:textSize="@dimen/text_size_12"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:background="@android:color/background_light"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/divider_horizontal_line" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        >
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_90"
+            android:layout_marginRight="@dimen/space_90"
+            android:text="查询"
+            android:textSize="@dimen/text_size_15"
+            android:background="@color/blue"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_90"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/background_light">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="1.此功能仅供【聘员大队】进行工资查询；"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="2.提倡薪酬保密，身份证号码验证通过后将与登录账号绑定不允许修改"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

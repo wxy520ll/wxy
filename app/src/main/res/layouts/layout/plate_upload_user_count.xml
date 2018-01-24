@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ebebeb">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"
+            >
+        <TextView
+                android:id="@+id/txt_date_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="日期"
+                android:textColor="@color/text_color_black"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                />
+        <include layout="@layout/textview_full_height"></include>
+        <TextView
+                android:id="@+id/txt_name_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="用户名"
+                android:textColor="@color/text_color_black"
+                android:gravity="center"
+                />
+        <include layout="@layout/textview_full_height"></include>
+
+        <TextView
+                android:id="@+id/txt_count_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="上传数"
+                android:textColor="@color/text_color_black"
+                android:gravity="center"
+                />
+
+    </LinearLayout>
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            layout="@layout/textview_fill_width"></include>
+
+
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:id="@+id/userCountlistView"/>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/bg_dark"
+              android:orientation="vertical">
+
+    <RadioGroup
+            android:id="@+id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+        <RadioButton
+                android:id="@+id/rb_local"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="本地缓存"
+                android:background="@android:color/white"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_14sp" />
+
+        <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tabs"
+                android:background="@color/bg_dark"  />
+
+
+        <RadioButton
+                android:id="@+id/rb_upload"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="已上传"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_14sp" />
+
+    </RadioGroup>
+
+
+
+    <FrameLayout
+            android:id="@+id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/space_1"
+            android:background="@color/white"
+            />
+
+</LinearLayout>

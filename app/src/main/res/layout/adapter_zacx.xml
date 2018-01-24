@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="90dp"
+        android:src="@mipmap/comm_empty"
+        android:layout_height="90dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="90dp">
+        <TextView
+            android:id="@+id/name"
+            android:text="杨易"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/result"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="检查结果:正常"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/time"
+            android:gravity="center_vertical"
+            android:text="检查时间:1995-3-13"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+</LinearLayout>

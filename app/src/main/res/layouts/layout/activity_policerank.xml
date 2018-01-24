@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/space_2"
+        android:layout_height="@dimen/space_40">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="fill_parent"
+            android:text="开始时间:"
+            style="@style/tv_search_bg"
+            android:textSize="@dimen/text_size_12"
+            android:id="@+id/choose_start_date"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:hint="请选择时间"
+            android:layout_marginRight="20dp"
+            style="@style/search_bg"
+            android:textSize="@dimen/text_size_12"
+            android:id="@+id/tv_choose_start_date"/>
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"></include>
+
+    <LinearLayout
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/space_2"
+        android:paddingTop="@dimen/space_2"
+        android:layout_height="@dimen/space_40">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="fill_parent"
+            android:text="结束时间:"
+            android:textSize="@dimen/text_size_12"
+            style="@style/tv_search_bg"
+            android:id="@+id/choose_end_date"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:hint="请选择时间"
+            android:textSize="@dimen/text_size_12"
+            style="@style/search_bg"
+            android:id="@+id/tv_choose_end_date"/>
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"></include>
+
+    <LinearLayout
+        android:background="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/space_2"
+        android:paddingTop="@dimen/space_2"
+        android:layout_height="@dimen/space_40">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="fill_parent"
+            android:text=" 类  别 :"
+            android:textSize="@dimen/text_size_12"
+            style="@style/tv_search_bg"
+            android:id="@+id/choosetype"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
+            android:hint="请选择类别"
+            android:textSize="@dimen/text_size_12"
+            style="@style/search_bg"
+            android:id="@+id/tv_choosetype"/>
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"></include>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_45"
+        android:paddingBottom="@dimen/space_2"
+        android:paddingTop="@dimen/space_2"
+        android:background="@android:color/background_light"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="名次"
+            android:textSize="@dimen/text_size_12"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+        <include layout="@layout/textview_full_height"></include>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="单位"
+            android:textSize="@dimen/text_size_12"
+            android:gravity="center"
+            />
+        <include layout="@layout/textview_full_height"></include>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="应完成数"
+            android:textSize="@dimen/text_size_12"
+            android:gravity="center"
+            />
+        <include layout="@layout/textview_full_height"></include>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="已上传数"
+            android:textSize="@dimen/text_size_12"
+            android:gravity="center"
+            />
+
+        <include layout="@layout/textview_full_height"></include>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="完成率"
+            android:textSize="@dimen/text_size_12"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"></include>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:id="@+id/listView"/>
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/bg_dark">
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dip"
+                android:orientation="horizontal">
+            <TextView android:layout_width="match_parent"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="12dp"
+                      android:text="从业者信息采集"
+                      android:textSize="@dimen/text_size_12"
+                      android:layout_marginRight="@dimen/space_5"
+                      android:background="@color/bg_dark"
+                      android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                style="@style/collection_information_linerlayout"
+                android:orientation="horizontal"
+                >
+            <TextView
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/imporent"
+                    style="@style/collection_information_tv"
+                    android:text="@string/net_cyzxm"/>
+            <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_cyzxm"
+                    android:layout_width="0dp" android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    style="@style/tv_search_bg"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      style="@style/collection_information_linerlayout">
+            <TextView android:layout_height="match_parent"
+                      style="@style/collection_information_tv"
+                      android:drawableRight="@drawable/imporent"
+                      android:text="@string/net_cyzsfz"/>
+
+
+            <EditText
+                    android:id="@+id/et_cyzsfz"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:maxLength="19"
+                    android:enabled="false"
+                    style="@style/tv_search_bg"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                style="@style/collection_information_linerlayout">
+            <TextView
+                    android:layout_height="match_parent"
+                    style="@style/collection_information_tv"
+                    android:text="@string/net_cyzdh"/>
+
+
+            <EditText
+                    android:id="@+id/et_cyzdh"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:maxLength="19"
+                    android:enabled="false"
+                    style="@style/tv_search_bg"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_marginTop="@dimen/space_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_120"
+                android:background="@android:color/background_light"
+                android:orientation="horizontal">
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:layout_marginLeft="@dimen/space_1"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical">
+
+                <ImageView
+                        android:layout_marginTop="@dimen/space_12"
+                        android:id="@+id/iv_cyz"
+                        android:layout_width="@dimen/space_100"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dr_camear"
+                        />
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="从业者全身照"
+                        android:textSize="@dimen/text_size_12"
+                        android:gravity="center"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="0.2"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+                android:visibility="gone"
+                android:id="@+id/btn_del"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45"
+                android:text="@string/del"
+                android:textSize="@dimen/text_size_15"
+                android:background="@android:color/holo_green_light"
+                android:textColor="@android:color/white"
+                />
+
+    </LinearLayout>
+
+</RelativeLayout>

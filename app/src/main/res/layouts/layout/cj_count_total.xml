@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@color/bg_dark"
+                android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="@dimen/height_40dip"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="match_parent"
+                          android:gravity="center_vertical"
+                          android:paddingLeft="12dp"
+                          android:text="汇总统计："
+                          android:layout_marginRight="5dp"
+                          android:background="@color/bg_dark"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="match_parent"
+                    android:text="汇总统计"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_item_goto_right_tip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="40dp"/>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="@dimen/height_40dip"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="match_parent"
+                          android:gravity="center_vertical"
+                          android:paddingLeft="12dp"
+                          android:text="按街道统计："
+                          android:layout_marginRight="5dp"
+                          android:background="@color/bg_dark"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_jd_rank"
+                    android:layout_width="match_parent"
+                    android:text="街道办采集排名"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_item_goto_right_tip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="40dp"/>
+
+
+            <TextView
+                    android:id="@+id/tv_jd_yh_rank"
+                    android:layout_width="match_parent"
+                    android:text="街道办用户采集排名"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_item_goto_right_tip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="40dp"/>
+
+
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="@dimen/height_40dip"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="match_parent"
+                          android:gravity="center_vertical"
+                          android:paddingLeft="12dp"
+                          android:text="按派出所统计："
+                          android:layout_marginRight="5dp"
+                          android:background="@color/bg_dark"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_pcs_rank"
+                    android:layout_width="match_parent"
+                    android:text="派出所采集排名"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_item_goto_right_tip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="40dp"/>
+
+
+
+            <TextView
+                    android:id="@+id/tv_pcs_yh_rank"
+                    android:layout_width="match_parent"
+                    android:text="派出所用户采集排名"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_item_goto_right_tip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="40dp"/>
+
+            <TextView
+                    android:id="@+id/tv_pcs_check_rank"
+                    android:layout_width="match_parent"
+                    android:text="派出所核查排名"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_item_goto_right_tip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="40dp"/>
+
+
+
+            <TextView
+                    android:id="@+id/tv_pcs_check_user_rank"
+                    android:layout_width="match_parent"
+                    android:text="派出所用户核查排名"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_item_goto_right_tip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="40dp"/>
+
+
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="@dimen/height_40dip"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="match_parent"
+                          android:gravity="center_vertical"
+                          android:paddingLeft="12dp"
+                          android:text="个人统计："
+                          android:layout_marginRight="5dp"
+                          android:background="@color/bg_dark"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_yh_rank"
+                    android:layout_width="match_parent"
+                    android:text="用户每日上传统计"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_item_goto_right_tip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="40dp"/>
+
+            <TextView
+                    android:id="@+id/tv_yh_check_rank"
+                    android:layout_width="match_parent"
+                    android:text="用户每日核查统计"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/bg_onclick"
+                    android:drawableRight="@drawable/ic_item_goto_right_tip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="40dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sDividerLineType="none"
+        app:sLeftBottomTextColor="@color/comm_grey"
+        app:sLeftBottomTextSize="12sp"
+        app:sLeftBottomTextString="龙岗所-梅刚警务室-梅刚警格"
+        app:sLeftIconHeight="60dp"
+        app:sLeftIconRes="@drawable/app_icon"
+        app:sLeftIconShowCircle="true"
+        app:sLeftIconWidth="60dp"
+        app:sLeftTopTextSize="12sp"
+        app:sLeftTopTextString="深圳市酒店"
+        app:sRightViewGravity="right_center"
+        app:sRightBottomTextColor="@color/comm_grey"
+        app:sRightBottomTextSize="12sp"
+        app:sRightBottomTextString="距离范围:100米"
+        app:sRightTextSize="12sp"
+        app:sLeftTextColor="@color/comm_grey"
+        app:sLeftTextSize="12sp"
+        app:sLeftTextString="最新检查时间:2012-15-48 54:88:10 "
+        app:sLeftViewGravity="left_center"
+        app:sUseRipple="false" />
+</FrameLayout>

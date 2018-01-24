@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_dark">
+
+    <!-- <FrameLayout
+             android:id="@+id/tabcontent"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_above="@+id/view"/>-->
+
+    <cn.net.xinyi.xmjt.utils.XYViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"></cn.net.xinyi.xmjt.utils.XYViewPager>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/tabs"
+        android:background="@android:color/background_light" />
+
+    <RadioGroup
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/select_rbtn_homepage"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="首页"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_10sp" />
+
+
+        <RadioButton
+            android:id="@+id/tab02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/select_rbtn_rw"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="任务"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_10sp" />
+
+
+        <RadioButton
+            android:id="@+id/tab03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/select_rbtn_community"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="龙岗圈"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_10sp" />
+
+
+        <RadioButton
+            android:id="@+id/tab04"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/select_rbtn_gzrz"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="工作日志"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_10sp" />
+
+        <RadioButton
+            android:id="@+id/tab05"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/select_rbtn_txl"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="通讯录"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_10sp" />
+    </RadioGroup>
+
+</RelativeLayout>

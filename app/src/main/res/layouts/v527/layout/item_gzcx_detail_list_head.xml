@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp">
+
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="排名"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_gzcx"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="5dp"
+        app:sCenterTextSize="14sp"
+        app:sCenterTextString="类别"
+        app:sDividerLineType="none"
+        app:sLeftBottomTextColor="@color/comm_grey"
+        app:sLeftBottomTextSize="12sp"
+        app:sLeftIconWidth="60dp"
+        app:sLeftTextColor="@color/comm_black"
+        app:sLeftTextSize="14sp"
+        app:sLeftTextString="姓名(手机)"
+        app:sLeftViewGravity="left_center"
+        app:sRightTextSize="14sp"
+        app:sRightTextString="数量"
+        app:sUseRipple="false" />
+</LinearLayout>

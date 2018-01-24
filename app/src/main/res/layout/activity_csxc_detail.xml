@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.net.xinyi.xmjt.v527.presentation.task.csxc.CsxcDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbtn_jcjl"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="检查记录"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:sCornersRadius="0dp"
+            app:sSelectorNormalColor="@color/comm_amber"
+            app:sSelectorPressedColor="@color/line"
+            app:sUseSelector="true" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbtn_zajc"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="场所巡查"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:sCornersRadius="0dp"
+            app:sSelectorNormalColor="@color/comm_blue"
+            app:sSelectorPressedColor="@color/line"
+            app:sUseSelector="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/comm_include_toolbar" />
+
+        <com.xinyi_tech.comm.widget.KeyValueView
+            android:id="@+id/kv_kddh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/comm_grey200" />
+
+        <com.xinyi_tech.comm.widget.KeyValueView
+            android:id="@+id/kv_mc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:comm_key_color="@color/comm_blue"
+            app:comm_key_text="名称"
+            app:comm_value_color="@color/comm_blue" />
+
+        <com.xinyi_tech.comm.widget.KeyValueView
+            android:id="@+id/kv_dz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:comm_key_text="地址" />
+
+        <com.xinyi_tech.comm.widget.KeyValueView
+            android:id="@+id/kv_bh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:comm_key_text="编号" />
+
+        <com.xinyi_tech.comm.widget.KeyValueView
+            android:id="@+id/kv_zb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:comm_key_text="坐标" />
+    </LinearLayout>
+
+</RelativeLayout>

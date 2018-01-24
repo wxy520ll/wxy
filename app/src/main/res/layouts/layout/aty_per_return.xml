@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_dark"
+        >
+
+        <ScrollView
+                android:id="@+id/sv_all"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                style="@style/collection_information_linerlayout">
+                                <TextView
+                                        android:layout_height="match_parent"
+                                        style="@style/collection_information_tv"
+                                        android:text="@string/per_bfrxm"
+                                        android:layout_weight="0.56"
+                                        android:drawableRight="@drawable/imporent"
+                                        />
+                                <EditText
+                                        android:id="@+id/et_name"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="20dp"
+                                        android:maxLength="10"
+                                        android:hint="请输入人员姓名"
+                                        style="@style/tv_search_bg"
+                                        android:background="@android:color/background_light"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:id="@+id/tv_smzj"
+                                        android:text="扫描证件"
+                                        android:textSize="12sp"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.4"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/white"
+                                        android:layout_height="match_parent"
+                                        android:background="#428bcb"
+                                        />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                style="@style/collection_information_linerlayout">
+                                <TextView
+                                        android:layout_height="match_parent"
+                                        style="@style/collection_information_tv"
+                                        android:text="@string/per_sfz"
+                                        android:drawableRight="@drawable/imporent"
+                                        />
+
+                                <EditText
+                                        android:id="@+id/et_sfz"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="20dp"
+                                        android:maxLength="18"
+                                        android:inputType="number"
+                                        android:digits="0123456789xX"
+                                        android:hint="请输入人员身份证"
+                                        style="@style/tv_search_bg"
+                                        android:background="@android:color/background_light"
+                                        android:layout_weight="1"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                style="@style/collection_information_linerlayout">
+                                <TextView
+                                        android:layout_height="match_parent"
+                                        style="@style/collection_information_tv"
+                                        android:drawableRight="@drawable/imporent"
+                                        android:text="@string/per_dzh"
+                                        />
+
+                                <EditText
+                                        android:id="@+id/et_dzh"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="20dp"
+                                        android:maxLength="25"
+                                        android:hint="定位中"
+                                        style="@style/tv_search_bg"
+                                        android:background="@android:color/background_light"
+                                        android:layout_weight="1"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                style="@style/collection_information_linerlayout"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                        android:layout_height="match_parent"
+                                        android:drawableRight="@drawable/imporent"
+                                        android:layout_weight="0.73"
+                                        style="@style/collection_information_tv"
+                                        android:text="经纬度坐标"/>
+
+                                <TextView
+                                        android:hint="正在定位中...."
+                                        android:id="@+id/tv_zb"
+                                        android:layout_width="0dp" android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="20dp"
+                                        style="@style/tv_search_bg"
+                                        android:background="@android:color/background_light"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:id="@+id/tv_sxwz"
+                                        android:text="刷新"
+                                        android:textSize="@dimen/text_size_12"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.4"
+                                        android:layout_marginRight="@dimen/space_2"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/white"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/bbutton_warning_edge"
+                                />
+
+                                <TextView
+                                        android:id="@+id/tv_sddw"
+                                        android:text="手动定位"
+                                        android:textSize="12sp"
+                                        android:textColor="@android:color/white"
+                                        android:layout_height="match_parent"
+                                        android:background="#428bcb"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.4"
+                                        android:gravity="center"
+                                        />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                style="@style/collection_information_linerlayout">
+                                <TextView
+                                        android:layout_height="match_parent"
+                                        style="@style/collection_information_tv"
+                                        android:text="@string/bz"
+                                        />
+
+                                <EditText
+                                        android:id="@+id/et_bz"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="20dp"
+                                        android:maxLength="30"
+                                        android:hint="备注"
+                                        style="@style/tv_search_bg"
+                                        android:background="@android:color/background_light"
+                                        android:layout_weight="1"/>
+                        </LinearLayout>
+
+
+                        <TextView
+                                android:gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/space_5"
+                                android:textSize="@dimen/text_size_12"
+                                android:layout_height="@dimen/space_35"
+                                android:layout_width="match_parent"
+                                android:text="@string/pzjl"
+                                android:background="@color/bg_dark"
+                                />
+
+
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/space_120"
+                                android:paddingTop="@dimen/space_5"
+                                android:background="@android:color/background_light"
+                                android:orientation="horizontal">
+
+                                <LinearLayout android:layout_width="0dp"
+                                              android:layout_weight="1"
+                                              android:layout_marginLeft="@dimen/space_1"
+                                              android:layout_height="match_parent"
+                                              android:orientation="vertical">
+
+                                        <ImageView
+                                                android:id="@+id/iv_lyqj"
+                                                android:layout_width="@dimen/space_100"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:layout_gravity="center"
+                                                android:scaleType="centerCrop"
+                                                android:src="@drawable/dr_camear"
+                                                />
+                                        <TextView
+                                                android:layout_width="@dimen/space_100"
+                                                android:layout_height="0dp"
+                                                android:text="人员全身照"
+                                                android:drawableRight="@drawable/imporent"
+                                                android:textSize="@dimen/text_size_12"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:background="@android:color/background_light"
+                                                android:layout_weight="0.2"/>
+                                </LinearLayout>
+                        </LinearLayout>
+                </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+                android:id="@+id/ll_boom"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/background_light"
+                style="@style/collection_information_linerlayout">
+
+                <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/save"
+                        android:background="@android:color/holo_green_light"
+                        android:textColor="@android:color/white"
+                        />
+
+                <Button
+                        android:id="@+id/btn_upl"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/upload"
+                        android:background="@android:color/holo_orange_dark"
+                        android:layout_marginLeft="@dimen/space_1"
+                        android:textColor="@android:color/white"
+                        />
+        </LinearLayout>
+</RelativeLayout>

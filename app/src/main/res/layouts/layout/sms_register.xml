@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/ll_rysf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_dark"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_police"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_80"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_onclick">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dr_regist_police"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_onclick">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_onclick">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/refist_police"
+                        android:textColor="@color/text_black"
+                        android:background="@drawable/bg_onclick"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space_20"
+                        android:textSize="@dimen/text_size_18"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/tv_pre"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_onclick"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_14sp"
+                        android:textColor="@android:color/holo_red_light"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/refist_police_tips"
+                    android:textColor="@color/text_dark"
+                    android:background="@drawable/bg_onclick"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_20"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_height="0dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_company"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_80"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_onclick">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dr_regist_company"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_onclick">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_onclick">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/refist_company"
+                        android:textColor="@color/text_black"
+                        android:background="@drawable/bg_onclick"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space_20"
+                        android:textSize="@dimen/text_size_18"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_onclick"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_14sp"
+                        android:textColor="@android:color/holo_red_light"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/refist_company_tips"
+                    android:textColor="@color/text_dark"
+                    android:background="@drawable/bg_onclick"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_20"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_height="0dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_dxyz"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_dark"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/background_light">
+
+            <TextView android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:text="1.手机号码验证"
+                android:textSize="15sp"
+                android:textColor="#428bcb"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/background_light"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_tips_info"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:textSize="15sp"
+                android:text="2.填写个人资料"
+                android:gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/background_light"
+                android:layout_height="match_parent"/>
+
+            <TextView android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:text="3.登录"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/background_light"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="0.42"
+                    android:text="手机号码"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/background_light"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:id="@+id/edt_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/background_light"
+                    android:hint=" 请输入手机号"
+                    android:maxLength="11"
+                    android:textSize="@dimen/text_size_12"
+                    android:inputType="phone"
+                    android:paddingLeft="20dp" />
+
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:text="获取验证码"
+                    android:textSize="@dimen/space_12"
+                    android:background="@color/blue"
+                    android:id="@+id/tv_yanzhenma"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/divider_horizontal_line" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_yzm"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:text="验证码"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/background_light"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+                    android:id="@+id/et_shuruyzm"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint=" 请输入验证码"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size_12"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:background="@android:color/background_light"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/divider_horizontal_line" />
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/background_light"
+            >
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="52dp"
+                android:text="下一步"
+                android:background="@color/blue"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/background_light">
+        <TextView android:layout_width="match_parent"
+            android:text="1.请根据自己的实际身份注册龙岗协警助手，一经注册不能更改，警务注册人员没有注册权限请联系所属派出所"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"/>
+
+        <TextView android:layout_width="match_parent"
+            android:text="2.您的手机号码是本软件唯一登录方式，不可修改"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"/>
+        <TextView android:layout_width="match_parent"
+            android:text="3.意见反馈渠道：系统设置->意见反馈"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"
+            />
+        <TextView android:layout_width="match_parent"
+            android:text="4.如无法获取验证码请稍后再试，同一手机号码24小时内最多请求5次验证；"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light" />
+
+    </LinearLayout>
+</LinearLayout>

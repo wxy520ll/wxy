@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_dark"
+                android:scrollbars="vertical"
+        >
+
+
+
+    <ListView
+            android:id="@+id/lv_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_45"
+            android:background="@color/white"
+    />
+
+    <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_45"
+            android:text="@string/upload"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            />
+
+    <include layout="@layout/include_empty_data"></include>
+
+</RelativeLayout>

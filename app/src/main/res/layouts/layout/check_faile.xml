@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ListView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_dark"
+                android:id="@+id/lv_upload_camera_room"
+                android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+                android:id="@+id/empty_data"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="9pt"
+                android:text="本机没有缓存的数据">
+        </TextView>
+    </RelativeLayout>
+
+
+    <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"/>
+
+
+</RelativeLayout>

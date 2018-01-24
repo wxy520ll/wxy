@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ll_polinfo"
+        android:layout_height="@dimen/space_180">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="警力信息"
+            android:textStyle="bold"
+            android:textSize="@dimen/space_15"
+            android:background="@color/blue"
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/bg_dark"
+            android:orientation="horizontal"
+    >
+
+        <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                style="@style/collection_information_tv"
+                android:text="所属派出所"/>
+
+        <TextView
+                android:id="@+id/tv_sspcs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/divider_horizontal_line"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/bg_dark"
+            android:orientation="horizontal"
+    >
+
+        <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                style="@style/collection_information_tv"
+                android:text="人员身份"/>
+
+        <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_horizontal_line"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/bg_dark"
+            android:orientation="horizontal"
+    >
+        <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                style="@style/collection_information_tv"
+                android:text="联系信息"/>
+
+        <TextView
+                android:id="@+id/tv_mz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_horizontal_line"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+        <Button
+                android:id="@+id/bt_call"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:paddingLeft="@dimen/space_60"
+                android:paddingRight="@dimen/space_60"
+                android:text="联系TA"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:background="@color/blue"
+                android:textColor="@android:color/white"
+        />
+    </LinearLayout>
+
+</LinearLayout>

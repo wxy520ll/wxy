@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/bg_dark"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light"
+    >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="岗亭名称"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/text_color_black"
+                android:layout_height="match_parent"
+                android:gravity="center"
+        />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="值守人员"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/text_color_black"
+                android:gravity="center"
+        />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="值守状态"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/text_color_black"
+                android:gravity="center"
+        />
+        <include layout="@layout/textview_full_height"></include>
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="最后一次操作时间"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/text_color_black"
+                android:gravity="center"
+        />
+
+
+    </LinearLayout>
+    <include layout="@layout/textview_fill_width"/>
+
+</LinearLayout>

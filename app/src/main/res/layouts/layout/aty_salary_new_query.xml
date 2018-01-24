@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="@string/salary_month"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+
+                    <TextView
+                        android:id="@+id/tv_month"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="@string/salary_name"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <TextView
+                        android:id="@+id/tv_realname"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="@string/salary_dep"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+
+                    <TextView
+                        android:id="@+id/tv_organname"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="岗位类别"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_posttype"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="@string/salary_job_name"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_postname"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="@string/salary_bank_number"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_bankno"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="基本工资"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_basewages"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="工龄工资"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_workagewage"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="岗位工资"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_gwgz"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                android:visibility="gone"
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="当月绩效"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_monthperform"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="绩效工资"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_jxgz"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="职级补贴"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_zjbt"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="职务津贴"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_zwjt"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="高温补贴"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_gwbt"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="周末加班工资"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_zmjbgz"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="法定节假日加班工资"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_fdjrjbgz"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                android:visibility="gone"
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="加班工资汇总"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_jbgz"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="其他工资"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_otherwage"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="其他工资备注"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_otherwanemark"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="特殊岗位补贴"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_tsgwbt"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="小教官补贴"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_xjgbt"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="特殊情况处理"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_specialflag"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="合计应发"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_totalwages"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="住房公积金"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_housefund"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="社保"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_sociafund"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="合计扣款"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_deductall"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="实发工资"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_shoudgive"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="扣税"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_fax"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_text"
+                        android:text="税后工资"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_shgz"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

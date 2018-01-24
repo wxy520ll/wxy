@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/space_8"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+
+        <TextView android:id="@+id/tv_zt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_20" />
+
+        <TextView android:id="@+id/tv_jfmc"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_20" />
+
+        <TextView android:id="@+id/tv_shry"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_20"
+            android:textColor="@color/text_black"/>
+
+        <TextView android:id="@+id/tv_sglx"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_20"
+            android:textColor="@color/text_black"/>
+
+        <TextView android:id="@+id/tv_sqdw"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_20"
+            android:textColor="@color/text_black"/>
+
+        <TextView android:id="@+id/tv_sqr"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_20"
+            android:textColor="@color/text_black"/>
+
+        <TextView android:id="@+id/tv_sqsj"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_20"
+            android:textColor="@color/text_black"/>
+
+        <TextView android:id="@+id/tv_wcsj"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_20"
+            android:textColor="@color/text_black"/>
+
+
+        <include layout="@layout/textview_fill_width"/>
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/ll_check"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_marginTop="@dimen/space_20"-->
+        <!--android:layout_marginBottom="@dimen/space_20"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_tg"-->
+        <!--android:text="通过"-->
+        <!--android:layout_width="@dimen/space_0"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:background="@android:color/holo_green_light"-->
+        <!--android:layout_height="match_parent" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_btg"-->
+        <!--android:layout_width="@dimen/space_0"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@android:color/holo_red_light"-->
+        <!--android:text="不通过"-->
+        <!--android:textColor="@color/white"/>-->
+
+
+        <!--</LinearLayout>-->
+
+</LinearLayout>

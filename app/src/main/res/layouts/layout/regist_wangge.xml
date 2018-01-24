@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <!--
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:id="@+id/lv_wangge"/>   -->
+
+    <GridView
+            android:id="@+id/gv_wangge"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/space_5"
+            android:numColumns="2"
+            android:layout_marginBottom="@dimen/space_40"
+            android:verticalSpacing="@dimen/space_10"
+            android:horizontalSpacing="@dimen/space_10"
+            android:columnWidth="@dimen/space_65"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:layout_height="wrap_content"></GridView>
+
+
+    <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/space_40"
+            android:layout_marginLeft="@dimen/space_120"
+            android:layout_marginRight="@dimen/space_120"
+            android:text="确定"
+            android:textSize="@dimen/text_size_17"
+           android:background="@color/blue"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

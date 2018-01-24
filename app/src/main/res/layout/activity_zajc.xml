@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_include_toolbar"></include>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <com.xinyi_tech.comm.form.FormLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:comm_fieldDivided="false"
+            app:comm_fieldMinHeight="48dp"
+            app:comm_formDivided="true">
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_SPINNER"
+                app:comm_field_name="sczwt"
+                app:comm_init_content="检查正常_检查正常,当场整改_当场整改,上报民警_上报民警"
+                app:comm_label_name="检查结果反馈"
+                app:comm_must="true" />
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_EDITTEXT"
+                app:comm_edittext_line="5"
+                app:comm_field_name="smjclyj"
+                app:comm_label_name="检查人员意见"
+                app:comm_must="true" />
+
+            <!--附件-->
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_field_name="jczp"
+                app:comm_label_name="拍                照"
+                app:comm_must="true">
+
+                <com.xinyi_tech.comm.widget.picker.SuperMutiPickerView
+                    android:id="@+id/smimg_zp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.xinyi_tech.comm.form.FieldView>
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_field_name="qmzp"
+                app:comm_label_name="签                名"
+                app:comm_must="true">
+
+                <com.xinyi_tech.comm.widget.picker.SuperImageView
+                    android:id="@+id/simg_qm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_add_pic"
+                    app:sImgRatio="1" />
+
+            </com.xinyi_tech.comm.form.FieldView>
+
+
+        </com.xinyi_tech.comm.form.FormLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbtn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="提交"
+            android:textColor="@color/white"
+            app:sCornersRadius="5dp"
+            app:sSelectorNormalColor="@color/comm_blue"
+            app:sSelectorPressedColor="@color/line"
+            app:sUseSelector="true" />
+
+    </LinearLayout>
+</LinearLayout>

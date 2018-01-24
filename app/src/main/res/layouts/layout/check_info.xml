@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <Button
+            android:id="@+id/JKSinfo_check"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/space_80"
+            android:layout_marginLeft="@dimen/space_50"
+            android:layout_marginRight="@dimen/space_50"
+            android:layout_marginTop="@dimen/space_80"
+            android:text="@string/JKSinfo_check"
+            android:textSize="24sp"
+            />
+
+    <Button
+            android:id="@+id/SXTinfo_check"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/space_80"
+            android:layout_marginLeft="@dimen/space_50"
+            android:layout_marginRight="@dimen/space_50"
+            android:layout_marginTop="@dimen/space_80"
+            android:text="@string/SXTinfo_check"
+            android:textSize="24sp"
+         />
+
+
+</LinearLayout>

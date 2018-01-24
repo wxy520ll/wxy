@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_dark">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dip"
+            android:orientation="horizontal">
+        <TextView android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="12dp"
+                  android:text="经营者信息"
+                  android:textSize="@dimen/text_size_12"
+                  android:layout_marginRight="@dimen/space_5"
+                  android:background="@color/bg_dark"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  style="@style/collection_information_linerlayout"
+                  android:orientation="horizontal"
+    >
+        <TextView
+                android:layout_height="match_parent"
+                style="@style/collection_information_tv"
+                android:text="经营者姓名"/>
+
+
+        <EditText
+                android:id="@+id/et_jyzxm"
+                android:hint="请填写经营者姓名"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:maxLength="12"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  style="@style/collection_information_linerlayout"
+                  android:orientation="horizontal"
+    >
+        <TextView
+                android:layout_height="match_parent"
+                style="@style/collection_information_tv"
+                android:text="经营者电话"/>
+
+
+        <EditText
+                android:id="@+id/et_jyzdh"
+                android:hint="请填写经营者电话"
+                android:layout_width="0dp"
+                android:inputType="phone"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:maxLength="12"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/collection_information_linerlayout"
+            android:orientation="horizontal"
+    >
+        <TextView
+                android:layout_height="match_parent"
+                style="@style/collection_information_tv"
+                android:text="服务电话"/>
+
+
+        <EditText
+                android:id="@+id/et_jyzfwdh"
+                android:hint="请填写服务电话"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:maxLength="12"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+            android:layout_marginTop="@dimen/space_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_100"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/space_2"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/iv_yyzz"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dr_camear"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="营业执照"
+                    android:textSize="@dimen/text_size_12"
+                    android:gravity="center"
+                    android:src="@android:color/background_light"
+                    android:layout_weight="0.4"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_marginLeft="@dimen/space_2"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/iv_tzhy"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/dr_camear"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="特种行业许可证"
+                    android:textSize="@dimen/text_size_12"
+                    android:gravity="center"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="0.4"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_marginLeft="@dimen/space_2"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/iv_xfys"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dr_camear"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="消防验收合格证"
+                    android:textSize="@dimen/text_size_12"
+                    android:gravity="center"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="0.4"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_marginLeft="@dimen/space_2"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/iv_hbpw"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dr_camear"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="环保批文"
+                    android:textSize="@dimen/text_size_12"
+                    android:gravity="center"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="0.4"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_marginLeft="@dimen/space_2"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/iv_qt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dr_camear"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="其他"
+                    android:textSize="@dimen/text_size_12"
+                    android:gravity="center"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="0.4"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

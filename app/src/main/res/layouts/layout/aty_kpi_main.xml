@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/space_75"-->
+    <!--android:layout_marginTop="@dimen/space_5"-->
+    <!--android:layout_marginLeft="@dimen/space_15"-->
+    <!--android:layout_marginRight="@dimen/space_15"-->
+    <!--android:background="@drawable/top_main_cj_tj"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_kh"
+                android:textColor="@color/bbutton_danger"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_height="@dimen/space_45"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:background="@drawable/bg_onclick"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:textSize="@dimen/text_size_14" />
+
+            <LinearLayout
+                android:id="@+id/ll_kpi_study"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_80"
+                android:layout_marginTop="@dimen/space_20"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_onclick"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dr_safety_study"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_20"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_onclick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_onclick">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/kpi_study"
+                            android:textColor="@color/text_black"
+                            android:background="@drawable/bg_onclick"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textSize="@dimen/text_size_18"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="数字证书学习"
+                        android:textColor="@color/text_dark"
+                        android:background="@drawable/bg_onclick"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space_20"
+                        android:textSize="@dimen/text_size_12"
+                        android:layout_height="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_kpi_check"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_80"
+                android:layout_marginTop="@dimen/space_20"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_onclick"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dr_safety_check"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_20"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_onclick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_onclick">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/kpi_check"
+                            android:textColor="@color/text_black"
+                            android:background="@drawable/bg_onclick"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textSize="@dimen/text_size_18"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="数字证书考核"
+                        android:textColor="@color/text_dark"
+                        android:background="@drawable/bg_onclick"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space_20"
+                        android:textSize="@dimen/text_size_12"
+                        android:layout_height="0dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_kpi_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_80"
+                android:layout_marginTop="@dimen/space_20"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_onclick">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dr_safety_approval"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_20"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_55"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_onclick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_onclick">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/kpi_record"
+                            android:textColor="@color/text_black"
+                            android:background="@drawable/bg_onclick"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/space_20"
+                            android:textSize="@dimen/text_size_18"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="PKI数字证书照片、编号，进行备案"
+                        android:textColor="@color/text_dark"
+                        android:background="@drawable/bg_onclick"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space_20"
+                        android:textSize="@dimen/text_size_12"
+                        android:layout_height="0dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_85"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@drawable/top_main_qwfk" />
+
+
+    <LinearLayout
+        android:id="@+id/plc_sttn_zs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_75"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@drawable/bg_onclick"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_20"
+            android:src="@drawable/dr_fkdzs" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_45"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_onclick"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:text="@string/plc_sttn_zs"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:text="@string/plc_sttn_zs_tips"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/plc_sttn_map"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_75"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@drawable/bg_onclick"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_20"
+            android:src="@drawable/dr_fkddt" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_45"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_onclick"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:text="@string/plc_sttn_map"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_onclick"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:text="@string/plc_sttn_map_tips"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

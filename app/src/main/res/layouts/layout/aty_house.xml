@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <ScrollView
+        android:id="@+id/sv_all"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/space_45">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--LinearLayout 第一层布局  -->
+                <LinearLayout
+                    style="@style/collect_first_linear">
+                    <!--LinearLayout 第二层布局右边采集类提示  -->
+                    <LinearLayout
+                        style="@style/collect_left_linear">
+                        <!--TextView 右边菜单-->
+                        <TextView
+                            style="@style/collect_left_import_text"
+                            android:text="@string/house_ldbm"/>
+                        <!--TextView  底部线 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_short_blue"/>
+                    </LinearLayout>
+
+                    <!--LinearLayout 第二层布局左边采集  -->
+                    <LinearLayout
+                        style="@style/collect_right_linear">
+                        <!--EditText  左边输入框-->
+                        <TextView
+                            android:id="@+id/tv_ldbm"
+                            android:maxLength="30"
+                            style="@style/collect_right_text"
+                            />
+                        <!--TextView 左边输入框底部线条 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_long_blue"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--第一层LinerLayout  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    style="@style/collect_radiogroup_linerlayout"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        style="@style/collect_left_linear_radio">
+                        <!--RadioGroup   -->
+                        <RadioGroup
+                            android:id="@+id/rg_ktjzz"
+                            android:layout_width="match_parent"
+                            style="@style/collect_radiogroup"
+                            >
+                            <!--RadioButton   -->
+                            <RadioButton
+                                android:id="@+id/rb_ktjzz_0"
+                                android:text="@string/YES"
+                                style="@style/collect_radiobutton" />
+                            <RadioButton
+                                android:id="@+id/rb_ktjzz_1"
+                                android:text="@string/NO"
+                                style="@style/collect_radiobutton" />
+                        </RadioGroup>
+                        <!--TextView  底部线 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_short_blue"/>
+                    </LinearLayout>
+
+                    <!--LinearLayout 第二层布局左边采集  -->
+                    <LinearLayout
+                        android:layout_weight="0.3"
+                        style="@style/collect_right_linear">
+                        <!--EditText  左边输入框-->
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            style="@style/collection_information_tv"
+                            android:text="@string/house_zh"/>
+                        <!--TextView 左边输入框底部线条 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_long_blue"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--LinearLayout 第一层布局  -->
+                <LinearLayout
+                    style="@style/collect_first_linear">
+                    <!--LinearLayout 第二层布局右边采集类提示  -->
+                    <LinearLayout
+                        style="@style/collect_left_linear">
+                        <!--TextView 右边菜单-->
+                        <TextView
+                            style="@style/collect_left_import_text"
+                            android:text="@string/house_lb"/>
+                        <!--TextView  底部线 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_short_blue"/>
+                    </LinearLayout>
+
+                    <!--LinearLayout 第二层布局左边采集  -->
+                    <LinearLayout
+                        style="@style/collect_right_linear">
+                        <!--EditText  左边输入框-->
+                        <TextView
+                            android:id="@+id/tv_lb"
+                            android:maxLength="30"
+                            android:hint="请选择出租屋类别"
+                            style="@style/collect_right_text"
+                            />
+                        <!--TextView 左边输入框底部线条 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_long_blue"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--LinearLayout 第一层布局  -->
+                <LinearLayout
+                    style="@style/collect_first_linear">
+                    <!--LinearLayout 第二层布局右边采集类提示  -->
+                    <LinearLayout
+                        style="@style/collect_left_linear">
+                        <!--TextView 右边菜单-->
+                        <TextView
+                            style="@style/collect_left_import_text"
+                            android:text="地址（龙岗区）"/>
+                        <!--TextView  底部线 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_short_blue"/>
+                    </LinearLayout>
+
+                    <!--LinearLayout 第二层布局左边采集  -->
+                    <LinearLayout
+                        style="@style/collect_right_linear">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <!--EditText  左边输入框-->
+                            <EditText
+                                android:layout_weight="0.2"
+                                android:id="@+id/et_jd"
+                                android:maxLength="30"
+                                android:hint="请输入"
+                                android:drawableBottom="@drawable/line_long_blue"
+                                style="@style/collect_right_text"
+                                />
+                            <!--EditText  左边输入框-->
+                            <TextView
+                                android:layout_weight="0.2"
+                                android:maxLength="30"
+                                android:text="街道"
+                                style="@style/collect_right_text" />
+                            <!--EditText  左边输入框-->
+                            <EditText
+                                android:layout_weight="0.2"
+                                android:id="@+id/et_sq"
+                                android:maxLength="30"
+                                android:hint="请输入"
+                                android:drawableBottom="@drawable/line_long_blue"
+                                style="@style/collect_right_text"
+                                />
+                            <!--EditText  左边输入框-->
+                            <TextView
+                                android:layout_weight="0.2"
+                                android:maxLength="30"
+                                android:text="社区"
+                                style="@style/collect_right_text"
+                                />
+
+                        </LinearLayout>
+                        <!--TextView 左边输入框底部线条 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_long_blue"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--LinearLayout 第一层布局  -->
+                <LinearLayout
+                    android:id="@+id/ll_dz_hy"
+                    style="@style/collect_first_linear">
+
+                    <!--LinearLayout 第二层布局右边采集类提示  -->
+                    <LinearLayout
+                        style="@style/collect_left_linear">
+                    </LinearLayout>
+
+                    <!--LinearLayout 第二层布局左边采集  -->
+                    <LinearLayout
+                        style="@style/collect_right_linear">
+                        <LinearLayout
+                            android:paddingBottom="@dimen/space_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <!--EditText  左边输入框-->
+                            <EditText
+                                android:layout_weight="0.2"
+                                android:id="@+id/et_hy"
+                                android:maxLength="30"
+                                android:hint="请输入"
+                                android:gravity="center"
+                                android:drawableBottom="@drawable/line_long_blue"
+                                style="@style/collect_right_text"
+                                />
+                            <!--EditText  左边输入框-->
+                            <TextView
+                                android:layout_weight="0.2"
+                                android:maxLength="30"
+                                android:text="花园"
+                                style="@style/collect_right_text"
+                                />
+                        </LinearLayout>
+                        <!--TextView 左边输入框底部线条 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_long_blue"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--LinearLayout 第一层布局  -->
+                <LinearLayout
+                    android:id="@+id/ll_dz"
+
+                    style="@style/collect_first_linear">
+                    <!--LinearLayout 第二层布局右边采集类提示  -->
+                    <LinearLayout
+                        style="@style/collect_left_linear">
+                    </LinearLayout>
+
+                    <!--LinearLayout 第二层布局左边采集  -->
+                    <LinearLayout
+                        style="@style/collect_right_linear">
+                        <LinearLayout
+                            android:paddingBottom="@dimen/space_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <!--EditText  左边输入框-->
+                            <EditText
+                                android:layout_weight="0.2"
+                                android:id="@+id/et_dzx"
+                                android:maxLength="10"
+                                android:hint="请输入"
+                                android:gravity="center"
+                                android:drawableBottom="@drawable/line_long_blue"
+                                style="@style/collect_right_text"
+                                />
+                            <!--EditText  左边输入框-->
+                            <TextView
+                                android:layout_weight="0.2"
+                                android:maxLength="30"
+                                android:text="路/巷"
+                                style="@style/collect_right_text"
+                                />  <!--EditText  左边输入框-->
+                            <EditText
+                                android:layout_weight="0.2"
+                                android:id="@+id/et_mph"
+                                android:maxLength="30"
+                                android:hint="请输入"
+                                android:gravity="center"
+                                android:drawableBottom="@drawable/line_long_blue"
+                                style="@style/collect_right_text"
+                                />
+                            <!--EditText  左边输入框-->
+                            <TextView
+                                android:layout_weight="0.2"
+                                android:maxLength="30"
+                                android:text="号"
+                                style="@style/collect_right_text"
+                                />
+                        </LinearLayout>
+                        <!--TextView 左边输入框底部线条 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_long_blue"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--LinearLayout 第一层布局  -->
+                <LinearLayout
+                    style="@style/collect_first_linear">
+                    <!--LinearLayout 第二层布局右边采集类提示  -->
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        style="@style/collect_left_linear">
+                        <!--TextView 右边菜单-->
+                        <TextView
+                            style="@style/collect_left_import_text"
+                            android:text="@string/ZB"/>
+                        <!--TextView  底部线 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_short_blue"/>
+                    </LinearLayout>
+
+                    <!--LinearLayout 第二层布局左边采集  -->
+                    <LinearLayout
+                        style="@style/collect_right_linear">
+                        <!--EditText  左边输入框-->
+                        <TextView
+                            android:id="@+id/tv_zb"
+                            android:maxLength="30"
+                            android:hint="正在定位中"
+                            style="@style/collect_right_text"
+                            />
+                        <!--TextView 左边输入框底部线条 -->
+                        <TextView
+                            style="@style/collect_left_bottom"
+                            android:background="@drawable/line_long_blue"
+                            />
+                    </LinearLayout>
+
+                    <!--LinearLayout 第二层布局左边采集  -->
+                    <LinearLayout
+                        android:layout_weight="0.25"
+                        style="@style/collect_right_linear">
+                        <!--EditText  左边输入框-->
+                        <TextView
+                            android:id="@+id/tv_sddw"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="手动定位"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_12"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- 人防-->
+                <include layout="@layout/aty_house_rf"/>
+                <!-- 物防-->
+                <include layout="@layout/aty_house_wf"/>
+                <!-- 消防-->
+                <include layout="@layout/aty_house_xf"/>
+                <!-- 技防-->
+                <include layout="@layout/aty_house_jf"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_boom"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:layout_height="@dimen/space_40">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/save"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_orange_dark"
+            />
+
+        <Button
+            android:id="@+id/btn_upl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="下一步"
+            android:layout_marginLeft="0.5dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_light"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

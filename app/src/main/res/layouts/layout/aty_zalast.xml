@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dip"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_14"
+                android:text="治安信息"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginRight="@dimen/space_5"
+                android:background="@color/bg_dark"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/collection_information_linerlayout"
+            android:orientation="horizontal"
+            >
+        <TextView
+                android:layout_height="match_parent"
+                style="@style/collection_information_tv"
+                android:text="治安负责人"/>
+
+        <EditText
+                android:id="@+id/et_zafzr"
+                android:hint="请填写治安负责人"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:maxLength="12"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/collection_information_linerlayout"
+            android:orientation="horizontal"
+            >
+        <TextView
+                android:layout_height="match_parent"
+                style="@style/collection_information_tv"
+                android:text="治安负责人电话"/>
+
+
+        <EditText
+                android:id="@+id/et_zafzrdh"
+                android:hint="请填写治安负责人电话"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:maxLength="12"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/collection_information_linerlayout"
+            android:orientation="horizontal"
+            >
+        <TextView
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/imporent"
+                style="@style/collection_information_tv"
+                android:text="所属派出所"/>
+
+
+        <TextView
+                android:id="@+id/tv_sspcs"
+                android:hint="请选择所属派出所"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:maxLength="50"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/collection_information_linerlayout"
+            android:orientation="horizontal"
+            >
+        <TextView
+                android:layout_height="match_parent"
+                style="@style/collection_information_tv"
+                android:text="@string/store_ssjws"/>
+        <TextView
+                android:id="@+id/tv_ssjws"
+                android:hint="请选择所属警务室"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:maxLength="50"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dip"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_12"
+                android:text="从业人员信息"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginRight="@dimen/space_5"
+                android:background="@color/bg_dark"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <cn.net.xinyi.xmjt.utils.View.LinearLayoutForListView
+                android:id="@+id/lv_cyz"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </cn.net.xinyi.xmjt.utils.View.LinearLayoutForListView>
+
+        <TextView
+                android:id="@+id/tv_addcyz"
+                android:text="增加从业人员"
+                android:textSize="@dimen/text_size_12"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_height="40dp"
+                android:layout_width="100dp"
+                android:background="@color/blue"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dip"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="监控信息"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_dark"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <RadioGroup
+                    android:id="@+id/rg_sfcjjk"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    style="@style/tv_search_bg"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="0.8"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    >
+                <RadioButton
+                        android:id="@+id/rb_sfcjjk_0"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="是"
+                        android:textSize="@dimen/text_size_12"
+                        />
+                <RadioButton
+                        android:id="@+id/rb_sfcjjk_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="否"
+                        android:textSize="@dimen/text_size_12"
+                        />
+            </RadioGroup>
+            <TextView
+                    android:layout_height="match_parent"
+                    style="@style/collection_information_tv"
+                    android:text="是否采集监控信息"
+                    />
+        </LinearLayout>
+
+        <include layout="@layout/aty_zajkxx_include"></include>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dip"
+            android:orientation="horizontal">
+        <TextView android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="12dp"
+                  android:text="消防信息"
+                  android:textSize="@dimen/text_size_12"
+                  android:layout_marginRight="5dp"
+                  android:background="@color/bg_dark"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <RadioGroup
+                    android:id="@+id/rg_sfcjxf"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    style="@style/tv_search_bg"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="0.8"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    >
+
+                <RadioButton
+                        android:id="@+id/rb_sfcjxf_0"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="是"
+                        android:textSize="@dimen/text_size_12"
+                        />
+                <RadioButton
+                        android:id="@+id/rb_sfcjxf_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="否"
+                        android:checked="true"
+                        android:textSize="@dimen/text_size_12"
+                        />
+
+            </RadioGroup>
+            <TextView
+                    android:layout_height="match_parent"
+                    style="@style/collection_information_tv"
+                    android:text="是否采集消防信息"
+                    />
+        </LinearLayout>
+        <include layout="@layout/aty_zaxfxx_include"></include>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dip"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="备注"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginRight="5dp"
+                android:background="@color/bg_dark"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+    <EditText
+            android:id="@+id/et_bz"
+            android:hint="备注"
+            android:gravity="start"
+            android:layout_marginTop="@dimen/space_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60"
+            android:maxLength="30"
+            android:paddingLeft="20dp"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+
+</LinearLayout>

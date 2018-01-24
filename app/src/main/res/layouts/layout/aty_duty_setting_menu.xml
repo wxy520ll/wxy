@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/bg_dark"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="@dimen/space_85"
+               android:layout_marginTop="@dimen/space_5"
+               android:layout_marginLeft="@dimen/space_15"
+               android:layout_marginRight="@dimen/space_15"
+               android:background="@drawable/top_duty_setting"/>
+
+
+    <LinearLayout
+            android:id="@+id/ll_flights"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_75"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_onclick"
+    >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dr_duty_flags_setting"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_20"
+        />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_onclick">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/duty_flights_setting"
+                    android:textColor="@color/text_black"
+                    android:background="@drawable/bg_onclick"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_20"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_height="0dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/duty_flights_setting_tips"
+                    android:textColor="@color/text_dark"
+                    android:background="@drawable/bg_onclick"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_20"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_height="0dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:id="@+id/ll_duty"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_75"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_onclick"
+    >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dr_duty_beats_setting"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_20"
+        />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_onclick">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/duty_beats_setting"
+                    android:textColor="@color/text_black"
+                    android:background="@drawable/bg_onclick"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_20"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_height="0dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/duty_beats_tips"
+                    android:textColor="@color/text_dark"
+                    android:background="@drawable/bg_onclick"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_20"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_height="0dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_plc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_75"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_onclick"
+    >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dr_fkdgl"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_20"
+        />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_onclick">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/plc_setting"
+                    android:textColor="@color/text_black"
+                    android:background="@drawable/bg_onclick"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_20"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_height="0dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/plc_sttn_manager_tips"
+                    android:textColor="@color/text_dark"
+                    android:background="@drawable/bg_onclick"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_20"
+                    android:textSize="@dimen/text_size_12"
+                    android:layout_height="0dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

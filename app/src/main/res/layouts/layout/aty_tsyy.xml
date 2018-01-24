@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <cn.net.xinyi.xmjt.utils.HorizontalListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:id="@+id/listview"/>
+
+    <include layout="@layout/textview_fill_width"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:background="@drawable/tsyy_yyk">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/space_20"
+            android:paddingLeft="@dimen/space_10"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_10"
+            android:textColor="@color/text_dark"
+            android:text="@string/tsys_tips1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/space_4"
+            android:paddingLeft="@dimen/space_10"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_10"
+            android:textColor="@color/text_dark"
+            android:text="@string/tsys_tips2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/space_4"
+            android:paddingLeft="@dimen/space_10"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_10"
+            android:textColor="@color/text_dark"
+            android:text="@string/tsys_tips3" />
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/space_4"
+            android:paddingLeft="@dimen/space_10"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_10"
+            android:textColor="@color/text_dark"
+            android:text="@string/tsys_tips4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/space_4"
+            android:paddingLeft="@dimen/space_10"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_10"
+            android:textColor="@color/text_dark"
+            android:text="@string/tsys_tips5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_30"
+        android:orientation="horizontal"
+        android:background="@color/bg_dark">
+
+        <TextView
+            android:layout_width="@dimen/space_0"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/space_10"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/bg_white_point"
+            android:text="  可预约"
+            android:layout_margin="@dimen/space_5"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_10"
+            android:textColor="@color/text_dark" />
+
+        <TextView
+            android:layout_width="@dimen/space_0"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/bg_orage_point"
+            android:text="  已预约"
+            android:layout_margin="@dimen/space_5"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_10"
+            android:textColor="@color/text_dark" />
+
+        <TextView
+            android:layout_width="@dimen/space_0"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/bg_red_point"
+            android:text="  使用中"
+            android:layout_margin="@dimen/space_5"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_10"
+            android:textColor="@color/text_dark" />
+
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/gv_yy"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="@dimen/space_5"
+        android:verticalSpacing="@dimen/space_10"
+        android:horizontalSpacing="@dimen/space_10"
+        android:layout_height="wrap_content"
+        android:columnWidth="@dimen/space_60"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:numColumns="3">
+    </GridView>
+
+    <include layout="@layout/include_empty_data"/>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <cn.net.xinyi.xmjt.v527.widget.SelectDayView
+        android:id="@+id/select_gzcx"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        app:select_check_index="0"
+        app:select_title="工作成效" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/divide_line" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_gzcx"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:sCenterBottomTextColor="@color/black"
+        app:sCenterBottomTextSize="14sp"
+        app:sCenterBottomTextString="0(0)"
+        app:sCenterTextColor="@color/black"
+        app:sCenterTextGravity="center"
+        app:sCenterTextSize="14sp"
+        app:sCenterTextString="车牌采集"
+        app:sDividerLineType="none"
+        app:sLeftBottomTextColor="@color/black"
+        app:sLeftBottomTextSize="14sp"
+        app:sLeftBottomTextString="0(0)"
+        app:sLeftTextColor="@color/black"
+        app:sLeftTextGravity="center"
+        app:sLeftTextSize="14sp"
+        app:sLeftTextString="人员采集"
+        app:sLeftViewMarginLeft="30dp"
+        app:sRightBottomTextColor="@color/black"
+        app:sRightBottomTextSize="14sp"
+        app:sRightBottomTextString="0(0)"
+        app:sRightTextColor="@color/black"
+        app:sRightTextGravity="center"
+        app:sRightTextSize="14sp"
+        app:sRightTextString="巡逻公里数"
+        app:sRightViewMarginRight="30dp" />
+
+</LinearLayout>

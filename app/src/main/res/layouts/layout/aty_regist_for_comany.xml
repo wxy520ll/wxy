@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="@dimen/space_30"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <!--LinearLayout 第一层布局  -->
+    <LinearLayout
+        style="@style/collect_first_linear">
+        <!--LinearLayout 第二层布局右边采集类提示  -->
+        <LinearLayout
+            style="@style/collect_left_linear">
+            <!--TextView 右边菜单-->
+            <TextView
+                style="@style/collect_left_import_text"
+                android:text="@string/title_username"/>
+            <!--TextView  底部线 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_short_blue"/>
+        </LinearLayout>
+        <!--LinearLayout 第二层布局左边采集  -->
+        <LinearLayout
+            style="@style/collect_right_linear">
+            <!--EditText  左边输入框-->
+            <TextView
+                android:id="@+id/tv_yhm"
+                style="@style/collect_right_text"
+                />
+            <!--TextView 左边输入框底部线条 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_long_blue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--LinearLayout 第一层布局  -->
+    <LinearLayout
+        style="@style/collect_first_linear">
+        <!--LinearLayout 第二层布局右边采集类提示  -->
+        <LinearLayout
+            style="@style/collect_left_linear">
+            <!--TextView 右边菜单-->
+            <TextView
+                style="@style/collect_left_import_text"
+                android:text="@string/organname"/>
+            <!--TextView  底部线 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_short_blue"/>
+        </LinearLayout>
+        <!--LinearLayout 第二层布局左边采集  -->
+        <LinearLayout
+            style="@style/collect_right_linear">
+            <!--EditText  左边输入框-->
+            <EditText
+                android:id="@+id/et_companyname"
+                android:maxLength="30"
+                android:hint="请输入单位名称"
+                style="@style/collect_right_text"
+                />
+            <!--TextView 左边输入框底部线条 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_long_blue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--LinearLayout 第一层布局  -->
+    <LinearLayout
+        style="@style/collect_first_linear">
+        <!--LinearLayout 第二层布局右边采集类提示  -->
+        <LinearLayout
+            style="@style/collect_left_linear">
+            <!--TextView 右边菜单-->
+            <TextView
+                style="@style/collect_left_import_text"
+                android:text="@string/msg_login_name"/>
+            <!--TextView  底部线 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_short_blue"/>
+        </LinearLayout>
+        <!--LinearLayout 第二层布局左边采集  -->
+        <LinearLayout
+            style="@style/collect_right_linear">
+            <!--EditText  左边输入框-->
+            <EditText
+                android:id="@+id/et_xm"
+                android:hint="请输入姓名"
+                style="@style/collect_right_text"
+                />
+            <!--TextView 左边输入框底部线条 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_long_blue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--LinearLayout 第一层布局  -->
+    <LinearLayout
+        style="@style/collect_first_linear">
+        <!--LinearLayout 第二层布局右边采集类提示  -->
+        <LinearLayout
+            style="@style/collect_left_linear">
+            <!--TextView 右边菜单-->
+            <TextView
+                style="@style/collect_left_import_text"
+                android:text="@string/msg_login_cardNo"/>
+            <!--TextView  底部线 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_short_blue"/>
+        </LinearLayout>
+        <!--LinearLayout 第二层布局左边采集  -->
+        <LinearLayout
+            style="@style/collect_right_linear">
+            <!--EditText  左边输入框-->
+            <EditText
+                android:id="@+id/et_cardno"
+                android:maxLength="18"
+                android:inputType="number"
+                android:digits="0123456789xX"
+                android:hint="请输入身份证号码"
+                style="@style/collect_right_text"
+                />
+            <!--TextView 左边输入框底部线条 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_long_blue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--LinearLayout 第一层布局  -->
+    <LinearLayout
+        android:id="@+id/ll_password"
+        style="@style/collect_first_linear">
+        <!--LinearLayout 第二层布局右边采集类提示  -->
+        <LinearLayout
+            style="@style/collect_left_linear">
+            <!--TextView 右边菜单-->
+            <TextView
+                style="@style/collect_left_import_text"
+                android:text="@string/title_pwd"/>
+            <!--TextView  底部线 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_short_blue"/>
+        </LinearLayout>
+        <!--LinearLayout 第二层布局左边采集  -->
+        <LinearLayout
+            style="@style/collect_right_linear">
+            <!--EditText  左边输入框-->
+            <EditText
+                android:id="@+id/et_password"
+                android:hint="@string/msg_login_pwd"
+                android:inputType="textPassword"
+                style="@style/collect_right_text"
+                />
+            <!--TextView 左边输入框底部线条 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_long_blue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--LinearLayout 第一层布局  -->
+    <LinearLayout
+        android:id="@+id/ll_confir_password"
+        style="@style/collect_first_linear">
+        <!--LinearLayout 第二层布局右边采集类提示  -->
+        <LinearLayout
+            style="@style/collect_left_linear">
+            <!--TextView 右边菜单-->
+            <TextView
+                style="@style/collect_left_import_text"
+                android:text="密码确认"/>
+            <!--TextView  底部线 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_short_blue"/>
+        </LinearLayout>
+        <!--LinearLayout 第二层布局左边采集  -->
+        <LinearLayout
+            style="@style/collect_right_linear">
+            <!--EditText  左边输入框-->
+            <EditText
+                android:id="@+id/et_pwd_confirm"
+                android:hint="@string/msg_login_pwd"
+                android:inputType="textPassword"
+                style="@style/collect_right_text"
+                />
+            <!--TextView 左边输入框底部线条 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_long_blue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/space_1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_sfz"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dr_camear"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="身份证照片"
+                android:textSize="@dimen/text_size_12"
+                android:gravity="center"
+                android:background="@android:color/background_light"
+                android:layout_weight="0.2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_boom"
+        android:paddingTop="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/space_90">
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="注册"
+            android:layout_marginLeft="0.5dp"
+            android:layout_height="@dimen/space_50"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_light"
+            />
+    </LinearLayout>
+
+</LinearLayout>

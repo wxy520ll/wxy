@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_dark"
+>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:background="@color/bg_dark"
+    >
+        <TextView
+                android:id="@+id/tv_pcs"
+                android:text="科技通信科"
+                android:layout_width="@dimen/space_0"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_15"
+                android:background="@color/white"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:id="@+id/tv_xld"
+                android:text="信义巡逻点"
+                android:layout_width="@dimen/space_0"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:drawableRight="@drawable/ic_item_goto_right_tip"
+        />
+    </LinearLayout>
+</LinearLayout>

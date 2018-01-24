@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/background_light"
+        >
+
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_12"
+            android:gravity="center" />
+
+
+        <TextView
+            android:id="@+id/tv_update_number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_12"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_completed_number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="5万"
+            android:textSize="@dimen/text_size_12"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_completion_rate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+
+            android:textSize="@dimen/text_size_12"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/textview_fill_width"></include>
+
+
+</LinearLayout>

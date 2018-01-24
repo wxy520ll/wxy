@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_include_toolbar"></include>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--shape_form_bg.xml-->
+        <com.xinyi_tech.comm.form.FormLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/comm_white"
+            app:comm_dividedColor="@color/comm_grey300"
+            app:comm_fieldMinHeight="48dp"
+            app:comm_formDivided="true"
+            app:comm_labelBgColor="@drawable/shape_form_bg"
+            app:comm_labelWidth="80dp">
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_field_name="photo_1"
+                app:comm_label_name="正  脸  照"
+                app:comm_must="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.xinyi_tech.comm.widget.picker.SuperImageView
+                        android:id="@+id/img_zlz"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        app:sImgImageHolder="@drawable/dr_camear" />
+                </RelativeLayout>
+
+
+            </com.xinyi_tech.comm.form.FieldView>
+
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_RADIOGROUP"
+                app:comm_field_name="gender"
+                app:comm_init_content="男_1,女_2"
+                app:comm_label_name="性        别"
+                app:comm_must="true" />
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_field_name="xy_name"
+                app:comm_label_name="地        址"
+                app:comm_must="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="正在定位中...." />
+
+                    <TextView
+                        android:id="@+id/tv_sxwz"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/space_2"
+                        android:background="@color/bbutton_warning_edge"
+                        android:gravity="center"
+                        android:text="刷新"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/tv_sddw"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:background="#428bcb"
+                        android:gravity="center"
+                        android:text="手动定位"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.xinyi_tech.comm.form.FieldView>
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_HIDDENVIEW"
+                app:comm_field_name="x" />
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_HIDDENVIEW"
+                app:comm_field_name="y" />
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_EDITTEXT"
+                app:comm_field_name="name"
+                app:comm_label_name="姓        名" />
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_field_name="id_number"
+                app:comm_label_name="身份证号">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789X"
+                    android:maxLength="18" />
+
+            </com.xinyi_tech.comm.form.FieldView>
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_field_name="age"
+                app:comm_label_name="年        龄">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入年龄"
+                    android:inputType="number"
+                    android:maxLength="3" />
+
+            </com.xinyi_tech.comm.form.FieldView>
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_field_name="height"
+                app:comm_label_name="身高(cm)">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入身高"
+                    android:inputType="number|numberDecimal"
+                    android:maxLength="5" />
+
+            </com.xinyi_tech.comm.form.FieldView>
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_EDITTEXT"
+                app:comm_edittext_line="2"
+                app:comm_field_name="permanent_addr"
+                app:comm_label_name="居住地址" />
+
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_EDITTEXT"
+                app:comm_field_name="guardian"
+                app:comm_label_name="联  系  人" />
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_field_name="contact_phone"
+                app:comm_label_name="联系电话"
+                app:comm_warnMessager="请输入正确的手机号">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+
+            </com.xinyi_tech.comm.form.FieldView>
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_contentType="TYPE_EDITTEXT"
+                app:comm_edittext_line="2"
+                app:comm_field_name="feature_comment"
+                app:comm_label_name="特征描述" />
+
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_field_name="photo_2"
+                app:comm_label_name="侧  脸  照">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.xinyi_tech.comm.widget.picker.SuperImageView
+                        android:id="@+id/img_clz"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        app:sImgImageHolder="@drawable/dr_camear" />
+                </RelativeLayout>
+
+
+            </com.xinyi_tech.comm.form.FieldView>
+
+
+            <com.xinyi_tech.comm.form.FieldView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:comm_field_name="photo_3"
+                app:comm_label_name="全  身  照">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.xinyi_tech.comm.widget.picker.SuperImageView
+                        android:id="@+id/img_qsz"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        app:sImgImageHolder="@drawable/dr_camear" />
+                </RelativeLayout>
+
+
+            </com.xinyi_tech.comm.form.FieldView>
+
+
+            <com.allen.library.SuperButton
+                android:id="@+id/sbtn_next"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="42dp"
+                android:layout_marginTop="20dp"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:sCornersRadius="0dp"
+                app:sSelectorNormalColor="@android:color/holo_orange_dark"
+                app:sSelectorPressedColor="@color/line"
+                app:sUseSelector="true" />
+        </com.xinyi_tech.comm.form.FormLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

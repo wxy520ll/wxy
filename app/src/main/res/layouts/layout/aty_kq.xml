@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+                android:id="@+id/bmapView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:visibility="gone"
+                />
+        <LinearLayout
+                android:id="@+id/ll_all"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                        android:layout_weight="0.35"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_0"
+                        android:orientation="vertical"
+                        android:background="@color/bg_dark"
+                        >
+                        <TextView
+                                android:id="@+id/tv_year"
+                                android:layout_width="@dimen/space_200"
+                                android:layout_height="@dimen/space_0"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/space_20"
+                                />
+                        <TextView
+                                android:id="@+id/tv_date"
+                                android:layout_width="@dimen/space_200"
+                                android:layout_height="@dimen/space_0"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/space_20"
+                                android:text="10:16:31"
+                                />
+
+                        <TextView
+                                android:id="@+id/tv_week"
+                                android:layout_width="@dimen/space_200"
+                                android:layout_height="@dimen/space_0"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/space_20"
+                                android:textColor="@color/blue"
+                                />
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_weight="0.6"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_0"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                style="@style/collection_information_linerlayout"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                        android:layout_height="match_parent"
+                                        style="@style/collection_information_tv"
+                                        android:layout_weight="0.3"
+                                        android:drawableRight="@drawable/imporent"
+                                        android:text="当前地址"/>
+
+                                <EditText
+                                        android:id="@+id/et_dz"
+                                        android:layout_width="0dp" android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="20dp"
+                                        android:hint="正在定位中..."
+                                        android:maxLength="50"
+                                        style="@style/tv_search_bg"
+                                        android:background="@android:color/background_light"
+                                        android:layout_weight="1"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                style="@style/collection_information_linerlayout"
+                                android:orientation="horizontal"
+                                >
+                                <TextView
+                                        android:layout_height="match_parent"
+                                        android:drawableRight="@drawable/imporent"
+                                        android:layout_weight="0.42"
+                                        style="@style/collection_information_tv"
+                                        android:text="@string/ZB"/>
+
+                                <TextView
+                                        android:hint="正在定位中...."
+                                        android:id="@+id/tv_zb"
+                                        android:layout_width="0dp" android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="20dp"
+                                        style="@style/tv_search_bg"
+                                        android:background="@android:color/background_light"
+                                        android:layout_weight="1"/>
+                                <TextView
+                                        android:id="@+id/tv_sddw"
+                                        android:text="手动定位"
+                                        android:textSize="@dimen/text_size_12"
+                                        android:textColor="@android:color/white"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/blue"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="0.4"
+                                        android:gravity="center"
+                                        />
+                        </LinearLayout>
+
+                        <TextView
+                                android:layout_height="@dimen/space_40"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/space_1"
+                                android:textSize="@dimen/text_size_12"
+                                android:background="@color/bg_dark"
+                                android:paddingLeft="@dimen/space_5"
+                                android:gravity="center_vertical"
+                                android:text="@string/pzjl" />
+
+                        <LinearLayout
+                                android:layout_marginTop="@dimen/space_5"
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="@dimen/space_100"
+                                android:layout_gravity="center"
+                                android:background="@android:color/background_light"
+                                android:orientation="horizontal">
+                                <ImageView
+                                        android:id="@+id/iv_zp1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/dr_camear"
+                                        />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/ll_boom"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/background_light"
+                        style="@style/collection_information_linerlayout">
+
+                        <Button
+                                android:id="@+id/btn_sb"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="@string/kq_sb"
+                                android:background="@android:color/holo_green_light"
+                                android:textColor="@android:color/white"
+                                />
+
+                        <Button
+                                android:id="@+id/btn_xb"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="@string/kq_xb"
+                                android:background="@android:color/holo_orange_dark"
+                                android:layout_marginLeft="0.5dp"
+                                android:textColor="@android:color/white"
+                                />
+                </LinearLayout>
+
+        </LinearLayout>
+</RelativeLayout>

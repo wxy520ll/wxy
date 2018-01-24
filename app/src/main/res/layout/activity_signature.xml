@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.net.xinyi.xmjt.v527.presentation.task.csxc.SignatureActivity">
+
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        android:id="@+id/signature_pad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn"
+        app:penColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbtn_clear"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="清除"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:sCornersRadius="0dp"
+            app:sSelectorNormalColor="@color/comm_amber"
+            app:sSelectorPressedColor="@color/line"
+            app:sUseSelector="true" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbtn_ok"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:sCornersRadius="0dp"
+            app:sSelectorNormalColor="@color/comm_blue"
+            app:sSelectorPressedColor="@color/line"
+            app:sUseSelector="true" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+
+    <com.xinyi_tech.comm.widget.KeyValueView
+        android:id="@+id/kv_taskname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:comm_key_color="@color/comm_blue"
+        app:comm_key_text=""
+        app:comm_value_color="@color/comm_blue" />
+
+    <com.xinyi_tech.comm.widget.KeyValueView
+        android:id="@+id/kv_lx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:comm_key_text="类型"
+        app:comm_value_color="@color/comm_blue" />
+
+    <com.xinyi_tech.comm.widget.KeyValueView
+        android:id="@+id/kv_pfr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:comm_key_text="发起人" />
+
+    <com.xinyi_tech.comm.widget.KeyValueView
+        android:id="@+id/kv_pfrdw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:comm_key_text="发起人单位" />
+
+    <com.xinyi_tech.comm.widget.KeyValueView
+        android:id="@+id/kv_fssj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:comm_key_text="发送时间" />
+
+    <com.xinyi_tech.comm.widget.KeyValueView
+        android:id="@+id/kv_xqsj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:comm_key_text="限期时间" />
+
+    <com.xinyi_tech.comm.widget.KeyValueView
+        android:id="@+id/kv_taskjj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:comm_key_text="任务简介" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/sbtn_zjrw"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="终结任务"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:sCornersRadius="0dp"
+        app:sSelectorNormalColor="@color/comm_blue"
+        app:sSelectorPressedColor="@color/line"
+        app:sUseSelector="true" />
+
+</LinearLayout>

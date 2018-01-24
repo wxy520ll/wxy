@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_dark">
+
+    <LinearLayout android:layout_width="match_parent"
+                  style="@style/collection_information_linerlayout"
+                  android:orientation="horizontal"
+            >
+        <TextView
+                android:layout_height="match_parent"
+                style="@style/collection_information_tv"
+                android:drawableRight="@drawable/imporent"
+                android:text="灭火器数量"
+                />
+
+        <EditText
+                android:id="@+id/et_mhqsl"
+                android:enabled="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:maxLength="50"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/collection_information_linerlayout"
+            android:orientation="horizontal"
+            >
+        <TextView
+                android:layout_height="match_parent"
+                style="@style/collection_information_tv"
+                android:drawableRight="@drawable/imporent"
+                android:text="正常数"
+                />
+        <EditText
+                android:id="@+id/et_mhqzcs"
+                android:enabled="false"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:maxLength="50"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  style="@style/collection_information_linerlayout"
+                  android:orientation="horizontal"
+            >
+        <TextView
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/imporent"
+                style="@style/collection_information_tv"
+                android:text="到期日期"
+                />
+
+
+        <TextView
+                android:id="@+id/tv_dqrq"
+                android:enabled="false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:maxLength="50"
+                android:textSize="@dimen/text_size_12"
+                style="@style/tv_search_bg"
+                android:background="@android:color/background_light"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginTop="@dimen/space_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_120"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1.2"
+                      android:layout_marginLeft="@dimen/space_1"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <ImageView
+                    android:layout_marginTop="@dimen/space_12"
+                    android:id="@+id/iv_xfqjt"
+                    android:layout_width="@dimen/space_100"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/dr_camear"
+                    />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="消防全景图"
+                    android:textSize="@dimen/text_size_12"
+                    android:gravity="center"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="0.2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

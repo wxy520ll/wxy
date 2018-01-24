@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+        <LinearLayout
+            android:id="@+id/ll_pcs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_70"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/space_1"
+            android:background="@drawable/bg_onclick"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rank_pcs"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_20"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/total_pcs"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_20"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_item_goto_right_tip"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/space_20"
+                    />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_per_rank"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_70"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/space_1"
+            android:background="@drawable/bg_onclick"
+            >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rank_per_up"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_20"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/total_per_rank"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_20"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_item_goto_right_tip"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/space_20"
+                    />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_per"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_70"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/space_1"
+            android:background="@drawable/bg_onclick"
+            >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rank_per"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_20"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/total_per"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_20"
+                    android:textSize="@dimen/text_14sp"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_item_goto_right_tip"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/space_20"
+                    />
+        </LinearLayout>
+
+
+
+</LinearLayout>

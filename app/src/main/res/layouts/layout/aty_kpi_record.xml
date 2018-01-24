@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/sv_all"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                android:background="@color/white"
+                android:layout_height="@dimen/space_60"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:text="温馨提示:请正确填写编号和上传有清晰编号的PKI照片供后台验证，因编号错误或图片模糊无法验证的须本人带PKI到视频大队现场认证"
+                android:textColor="@color/red" />
+
+            <include layout="@layout/textview_fill_width"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                style="@style/collection_information_linerlayout"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_height="match_parent"
+                    style="@style/collection_information_tv"
+                    android:drawableRight="@drawable/imporent"
+                    android:text="证书编号"/>
+                <EditText
+                    android:id="@+id/et_zsbh"
+                    android:layout_width="0dp" android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="GD"
+                    android:maxLength="11"
+                    style="@style/tv_search_bg"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:text="数字证书图片"
+                android:background="@color/bg_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_160"
+                android:paddingLeft="@dimen/space_20"
+                android:paddingRight="@dimen/space_20"
+                android:paddingTop="@dimen/space_10"
+                android:background="@android:color/background_light"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingRight="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_ex1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/kpi_exam1" />
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="示例图一"
+                        android:textColor="@color/red"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_12"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="0.16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/space_10"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_ex2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/kpi_exam2" />
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="示例图二"
+                        android:textColor="@color/red"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_12"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="0.16"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv01"
+                android:layout_width="@dimen/space_120"
+                android:layout_height="@dimen/space_120"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:background="@drawable/dr_camear" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        style="@style/collection_information_linerlayout">
+        <Button
+            android:id="@+id/btn_upl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/upload"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_edt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/update"
+            android:background="@android:color/holo_orange_dark"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

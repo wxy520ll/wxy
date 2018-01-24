@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaveSideBar">
+        <attr name="sidebar_lazy_respond" format="boolean" />
+        <attr name="sidebar_text_color" format="color" />
+        <attr name="sidebar_max_offset" format="dimension" />
+        <attr name="sidebar_position" format="enum">
+            <enum name="right" value="0" />
+            <enum name="left" value="1" />
+        </attr>
+        <attr name="sidebar_text_alignment" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SelectView">
+        <attr name="select_title" format="string" />
+        <attr name="select_content" format="string" />
+        <attr name="select_content_with_value" format="string" />
+        <attr name="select_check_index" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="MaterialSearchView">
+        <attr name="searchBackground" format="integer"/>
+        <attr name="searchVoiceIcon" format="integer"/>
+        <attr name="searchCloseIcon" format="integer"/>
+        <attr name="searchBackIcon" format="integer"/>
+        <attr name="searchPadding" format="dimension"/>
+        <attr name="searchSupportBack" format="boolean"/>
+        <attr name="searchDefaultOpen" format="boolean"/>
+        <attr name="searchSuggestionIcon" format="integer"/>
+        <attr name="searchSuggestionBackground" format="integer"/>
+        <attr name="android:hint"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textColorHint"/>
+        <attr name="android:inputType"/>
+    </declare-styleable>
+</resources>

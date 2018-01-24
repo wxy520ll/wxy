@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.net.xinyi.xmjt.v527.presentation.home.cj.zacs.ZacsListActivity">
+
+    <include layout="@layout/comm_include_toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/comm_lightBlue300"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:text="当前位置"
+            android:textColor="@color/comm_white" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="48dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="定位" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/comm_grey200"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <cn.net.xinyi.xmjt.v527.widget.DictView
+            android:id="@+id/dict_view"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:drawableRight="@drawable/icon_arrow_down"
+            android:gravity="center"
+            android:padding="5dp"
+            tools:text="fffff"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.xinyi_tech.comm.widget.seacher.SuperSearchView
+            android:id="@+id/seacher_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:hint="请输入关键字"
+            android:textColorHint="@color/comm_grey300"
+            app:searchActionViewBackground="@android:color/transparent"
+            app:searchEditViewBackground="@color/comm_white"
+            app:searchTopbarBackground="@color/comm_grey" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_police_tab_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:visibility="gone">
+
+    <RadioGroup
+        android:id="@+id/police_header_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity=""
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="2dp">
+
+        <RadioButton
+            android:id="@+id/rb_jl"
+            style="@style/police_header_tab"
+            android:text="@string/polic_map" />
+
+        <RadioButton
+            android:id="@+id/rb_fkd"
+            style="@style/police_header_tab"
+            android:text="@string/plc_sttn_map" />
+
+        <RadioButton
+            android:id="@+id/rb_guiji"
+            style="@style/police_header_tab"
+            android:text="@string/gj_map" />
+    </RadioGroup>
+
+</FrameLayout>

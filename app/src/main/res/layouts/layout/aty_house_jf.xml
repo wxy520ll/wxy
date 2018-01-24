@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--分类标题  技防-->
+    <TextView
+        style="@style/collect_lb_title"
+        android:text="@string/house_jf"/>
+
+    <!--第一层LinerLayout  -->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_jf_spmj"
+        android:layout_width="match_parent"
+        style="@style/collect_radiogroup_linerlayout"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            style="@style/collect_left_linear_radio">
+            <!--RadioGroup   -->
+            <RadioGroup
+                android:id="@+id/rg_spmj"
+                android:layout_width="match_parent"
+                style="@style/collect_radiogroup"
+                >
+                <!--RadioButton   -->
+                <RadioButton
+                    android:id="@+id/rb_spmj_0"
+                    android:text="@string/YES"
+                    style="@style/collect_radiobutton" />
+                <RadioButton
+                    android:id="@+id/rb_spmj_1"
+                    android:text="@string/NO"
+                    style="@style/collect_radiobutton" />
+            </RadioGroup>
+            <!--TextView  底部线 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_short_blue"/>
+        </LinearLayout>
+
+        <!--LinearLayout 第二层布局左边采集  -->
+        <LinearLayout
+            android:layout_weight="0.3"
+            style="@style/collect_right_linear">
+            <!--EditText  左边输入框-->
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                style="@style/collection_information_tv"
+                android:text="@string/house_sfspmj"/>
+            <!--TextView 左边输入框底部线条 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_long_blue"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_jf"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--LinearLayout 第一层布局  -->
+        <LinearLayout
+            style="@style/collect_first_linear">
+            <!--LinearLayout 第二层布局右边采集类提示  -->
+            <LinearLayout
+                style="@style/collect_left_linear">
+                <!--TextView 右边菜单-->
+                <TextView
+                    style="@style/collect_left_import_text"
+                    android:text="@string/house_ttsl"/>
+                <!--TextView  底部线 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_short_blue"/>
+            </LinearLayout>
+            <!--LinearLayout 第二层布局左边采集  -->
+            <LinearLayout
+                style="@style/collect_right_linear">
+                <!--EditText  左边输入框-->
+                <EditText
+                    android:id="@+id/et_ggqy"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:hint="请输入公共区域探头数量"
+                    style="@style/collect_right_text"
+                    />
+                <!--TextView 左边输入框底部线条 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_long_blue"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--LinearLayout 第一层布局  -->
+        <LinearLayout
+            style="@style/collect_first_linear">
+            <!--LinearLayout 第二层布局右边采集类提示  -->
+            <LinearLayout
+                style="@style/collect_left_linear">
+                <!--TextView 右边菜单-->
+                <TextView
+                    style="@style/collect_left_import_text"
+                    android:text="@string/house_gqsl"/>
+                <!--TextView  底部线 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_short_blue"/>
+            </LinearLayout>
+            <!--LinearLayout 第二层布局左边采集  -->
+            <LinearLayout
+                style="@style/collect_right_linear">
+                <!--EditText  左边输入框-->
+                <EditText
+                    android:id="@+id/et_gqtt"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:hint="请输入高清探头数量"
+                    style="@style/collect_right_text"
+                    />
+                <!--TextView 左边输入框底部线条 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_long_blue"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--LinearLayout 第一层布局  -->
+        <LinearLayout
+            style="@style/collect_first_linear">
+            <!--LinearLayout 第二层布局右边采集类提示  -->
+            <LinearLayout
+                style="@style/collect_left_linear">
+                <!--TextView 右边菜单-->
+                <TextView
+                    style="@style/collect_left_import_text"
+                    android:text="@string/house_ptsl"/>
+                <!--TextView  底部线 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_short_blue"/>
+            </LinearLayout>
+            <!--LinearLayout 第二层布局左边采集  -->
+            <LinearLayout
+                style="@style/collect_right_linear">
+                <!--EditText  左边输入框-->
+                <EditText
+                    android:id="@+id/et_pttt"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:hint="请输入普通探头数量"
+                    style="@style/collect_right_text"
+                    />
+                <!--TextView 左边输入框底部线条 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_long_blue"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--LinearLayout 第一层布局  -->
+        <LinearLayout
+            style="@style/collect_first_linear">
+            <!--LinearLayout 第二层布局右边采集类提示  -->
+            <LinearLayout
+                style="@style/collect_left_linear">
+                <!--TextView 右边菜单-->
+                <TextView
+                    style="@style/collect_left_import_text"
+                    android:text="@string/house_spshsl"/>
+                <!--TextView  底部线 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_short_blue"/>
+            </LinearLayout>
+            <!--LinearLayout 第二层布局左边采集  -->
+            <LinearLayout
+                style="@style/collect_right_linear">
+                <!--EditText  左边输入框-->
+                <EditText
+                    android:id="@+id/et_spshsl"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:hint="请输入视频损坏数量"
+                    style="@style/collect_right_text"
+                    />
+                <!--TextView 左边输入框底部线条 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_long_blue"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--第一层LinerLayout  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/collect_radiogroup_linerlayout"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                style="@style/collect_left_linear_radio">
+                <!--RadioGroup   -->
+                <RadioGroup
+                    android:id="@+id/rg_aztt"
+                    android:layout_width="match_parent"
+                    style="@style/collect_radiogroup"
+                    >
+                    <!--RadioButton   -->
+                    <RadioButton
+                        android:id="@+id/rb_aztt_0"
+                        android:text="@string/YES"
+                        style="@style/collect_radiobutton" />
+                    <RadioButton
+                        android:id="@+id/rb_aztt_1"
+                        android:text="@string/NO"
+                        style="@style/collect_radiobutton" />
+                </RadioGroup>
+                <!--TextView  底部线 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_short_blue"/>
+            </LinearLayout>
+
+            <!--LinearLayout 第二层布局左边采集  -->
+            <LinearLayout
+                android:layout_weight="0.3"
+                style="@style/collect_right_linear">
+                <!--EditText  左边输入框-->
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    style="@style/collection_information_tv"
+                    android:text="@string/house_sftt"/>
+                <!--TextView 左边输入框底部线条 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_long_blue"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--第一层LinerLayout  -->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_jf_bj"
+        android:layout_width="match_parent"
+        style="@style/collect_radiogroup_linerlayout"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            style="@style/collect_left_linear_radio">
+            <!--RadioGroup   -->
+            <RadioGroup
+                android:id="@+id/rg_yjbb"
+                android:layout_width="match_parent"
+                style="@style/collect_radiogroup"
+                >
+                <!--RadioButton   -->
+                <RadioButton
+                    android:id="@+id/rb_yjbb_0"
+                    android:text="@string/YES"
+                    style="@style/collect_radiobutton" />
+                <RadioButton
+                    android:id="@+id/rb_yjbb_1"
+                    android:text="@string/NO"
+                    style="@style/collect_radiobutton" />
+            </RadioGroup>
+            <!--TextView  底部线 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_short_blue"/>
+        </LinearLayout>
+
+        <!--LinearLayout 第二层布局左边采集  -->
+        <LinearLayout
+            android:layout_weight="0.3"
+            style="@style/collect_right_linear">
+            <!--EditText  左边输入框-->
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                style="@style/collection_information_tv"
+                android:text="@string/house_sfbj"/>
+            <!--TextView 左边输入框底部线条 -->
+            <TextView
+                style="@style/collect_left_bottom"
+                android:background="@drawable/line_long_blue"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_jf_mj_no"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--第一层LinerLayout  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/collect_radiogroup_linerlayout"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                style="@style/collect_left_linear_radio">
+                <!--RadioGroup   -->
+                <RadioGroup
+                    android:id="@+id/rg_azdjspmj"
+                    android:layout_width="match_parent"
+                    style="@style/collect_radiogroup"
+                    >
+                    <!--RadioButton   -->
+                    <RadioButton
+                        android:id="@+id/rb_azdjspmj_0"
+                        android:text="@string/YES"
+                        style="@style/collect_radiobutton" />
+                    <RadioButton
+                        android:id="@+id/rb_azdjspmj_1"
+                        android:text="@string/NO"
+                        style="@style/collect_radiobutton" />
+                </RadioGroup>
+                <!--TextView  底部线 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_short_blue"/>
+            </LinearLayout>
+
+            <!--LinearLayout 第二层布局左边采集  -->
+            <LinearLayout
+                android:layout_weight="0.3"
+                style="@style/collect_right_linear">
+                <!--EditText  左边输入框-->
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    style="@style/collection_information_tv"
+                    android:text="@string/house_sfdjmj"/>
+                <!--TextView 左边输入框底部线条 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_long_blue"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--第一层LinerLayout  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/collect_radiogroup_linerlayout"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                style="@style/collect_left_linear_radio">
+                <!--RadioGroup   -->
+                <RadioGroup
+                    android:id="@+id/rg_sfsxsk"
+                    android:layout_width="match_parent"
+                    style="@style/collect_radiogroup"
+                    >
+                    <!--RadioButton   -->
+                    <RadioButton
+                        android:id="@+id/rb_sfsxsk_0"
+                        android:text="@string/YES"
+                        style="@style/collect_radiobutton" />
+                    <RadioButton
+                        android:id="@+id/rb_sfsxsk_1"
+                        android:text="@string/NO"
+                        style="@style/collect_radiobutton" />
+                </RadioGroup>
+                <!--TextView  底部线 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_short_blue"/>
+            </LinearLayout>
+
+            <!--LinearLayout 第二层布局左边采集  -->
+            <LinearLayout
+                android:layout_weight="0.3"
+                style="@style/collect_right_linear">
+                <!--EditText  左边输入框-->
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    style="@style/collection_information_tv"
+                    android:text="@string/house_sfsxsk"/>
+                <!--TextView 左边输入框底部线条 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_long_blue"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--LinearLayout 第一层布局  -->
+        <LinearLayout
+            style="@style/collect_first_linear">
+            <!--LinearLayout 第二层布局右边采集类提示  -->
+            <LinearLayout
+                style="@style/collect_left_linear">
+                <!--TextView 右边菜单-->
+                <TextView
+                    style="@style/collect_left_import_text"
+                    android:text="@string/house_mjshsl"/>
+                <!--TextView  底部线 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_short_blue"/>
+            </LinearLayout>
+            <!--LinearLayout 第二层布局左边采集  -->
+            <LinearLayout
+                style="@style/collect_right_linear">
+                <!--EditText  左边输入框-->
+                <EditText
+                    android:id="@+id/et_mjshsl"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:hint="请输入门禁损坏数量"
+                    style="@style/collect_right_text"
+                    />
+                <!--TextView 左边输入框底部线条 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_long_blue"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--LinearLayout 第一层布局  -->
+        <LinearLayout
+            style="@style/collect_first_linear">
+            <!--LinearLayout 第二层布局右边采集类提示  -->
+            <LinearLayout
+                style="@style/collect_left_linear">
+                <!--TextView 右边菜单-->
+                <TextView
+                    style="@style/collect_left_import_text"
+                    android:text="@string/house_lxbcsj"/>
+                <!--TextView  底部线 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_short_blue"/>
+            </LinearLayout>
+            <!--LinearLayout 第二层布局左边采集  -->
+            <LinearLayout
+                style="@style/collect_right_linear">
+                <!--EditText  左边输入框-->
+                <EditText
+                    android:id="@+id/et_lxbcsj"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:hint="请输入录像保存时间"
+                    style="@style/collect_right_text"
+                    />
+                <!--TextView 左边输入框底部线条 -->
+                <TextView
+                    style="@style/collect_left_bottom"
+                    android:background="@drawable/line_long_blue"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_jf_qt"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120"
+        android:paddingTop="@dimen/space_5"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal">
+
+        <LinearLayout android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/space_1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_jf"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dr_camear"
+                />
+            <TextView
+                android:layout_width="@dimen/space_100"
+                android:layout_height="0dp"
+                android:text="技防图片"
+                android:drawableRight="@drawable/imporent"
+                android:textSize="@dimen/text_size_12"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/background_light"
+                android:layout_weight="0.2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

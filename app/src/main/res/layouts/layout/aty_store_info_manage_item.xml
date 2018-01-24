@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/space_80"
+                      android:orientation="horizontal"
+                >
+            <ImageView
+                    android:id="@+id/iv_bg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/space_8"
+                    android:src="@drawable/dr_store"/>
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="@dimen/space_3"
+                        android:orientation="vertical"
+                        >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.7"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            >
+
+                        <TextView
+                                android:id="@+id/tv_1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.4"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/text_size_12"
+                               />
+                        <TextView
+                                android:id="@+id/tv_store_wz"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:layout_marginLeft="1dp"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/text_size_12"
+                                android:text="南山科技园"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_weight="0.7"
+                                  android:layout_height="0dp"
+                                  android:orientation="horizontal"
+                            >
+
+                        <TextView
+                                android:id="@+id/tv_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.4"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="@dimen/text_size_12"
+                                android:gravity="center_vertical"
+                                android:text="采集时间"/>
+                        <TextView
+                                android:id="@+id/tv_cjsj"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/text_size_12"
+                                android:layout_marginLeft="1dp"
+                                android:layout_height="match_parent"
+                                android:text=""/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            >
+
+
+                        <TextView
+                                android:id="@+id/tv_3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/text_size_12"
+                                android:layout_weight="0.4"
+                                android:layout_marginLeft="@dimen/space_5"
+                                />
+                        <TextView
+                                android:id="@+id/tv_store_mc"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/text_size_12"
+                                android:text="现代大厦"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

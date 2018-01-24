@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ebebeb"
+        >
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="@dimen/register_input_text_height"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="12dp"
+                  android:text="监控室统计"
+                  android:layout_marginRight="5dp"
+                  android:background="@color/bg_dark"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingBottom="2dp"
+            android:background="@android:color/background_light"
+            >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="fill_parent"
+                android:text="已上传数"
+                style="@style/tv_search_bg"
+                android:id="@+id/choose_start_date"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dp"
+                style="@style/search_bg"
+                android:textSize="@dimen/text_size_12"
+                android:id="@+id/tv_upload_jks"/>
+    </LinearLayout>
+
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            layout="@layout/textview_fill_width"></include>
+
+
+    <LinearLayout
+            android:id="@+id/ll_month"
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:layout_height="45dp"
+            android:background="@android:color/background_light"
+            >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="fill_parent"
+                android:text="核查通过数"
+                style="@style/tv_search_bg"
+                />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dp"
+                style="@style/search_bg"
+                android:textSize="@dimen/text_size_12"
+                android:id="@+id/tv_check_yes_jks"/>
+    </LinearLayout>
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            layout="@layout/textview_fill_width"></include>
+
+ <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:layout_height="45dp"
+            android:background="@android:color/background_light"
+            >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="fill_parent"
+                android:text="核查不通过数"
+                style="@style/tv_search_bg"
+                />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dp"
+                style="@style/search_bg"
+                android:textSize="@dimen/text_size_12"
+                android:id="@+id/tv_check_no_jks"/>
+    </LinearLayout>
+
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            layout="@layout/textview_fill_width"></include>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="@dimen/register_input_text_height"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="12dp"
+                  android:text="摄像头统计"
+                  android:layout_marginRight="5dp"
+                  android:background="@color/bg_dark"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:background="@android:color/background_light"
+            android:layout_height="45dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="fill_parent"
+                style="@style/tv_search_bg"
+                android:text="已上传数"
+                />
+        <TextView
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                style="@style/search_bg"
+                android:textSize="@dimen/text_size_12"
+                android:id="@+id/tv_upload_sxt"/>
+    </LinearLayout>
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            layout="@layout/textview_fill_width"></include>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:background="@android:color/background_light"
+            android:layout_height="45dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="fill_parent"
+                style="@style/tv_search_bg"
+                android:text="核查通过数"
+                />
+        <TextView
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                style="@style/search_bg"
+                android:textSize="@dimen/text_size_12"
+                android:id="@+id/tv_check_yes_sxt"/>
+    </LinearLayout>
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            layout="@layout/textview_fill_width"></include>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:background="@android:color/background_light"
+            android:layout_height="45dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="fill_parent"
+                style="@style/tv_search_bg"
+                android:text="核查不通过数"
+                />
+        <TextView
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                style="@style/search_bg"
+                android:textSize="@dimen/text_size_12"
+                android:id="@+id/tv_check_no_sxt"/>
+    </LinearLayout>
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            layout="@layout/textview_fill_width"></include>
+
+
+
+</LinearLayout>

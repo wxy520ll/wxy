@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp">
+
+    <ImageView
+        android:id="@+id/img_pm"
+        android:layout_width="36dp"
+        android:layout_height="36dp" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/stv_gzcx"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="5dp"
+        app:sCenterTextSize="14sp"
+        app:sDividerLineType="none"
+        app:sLeftBottomTextColor="@color/comm_grey"
+        app:sLeftBottomTextSize="12sp"
+        app:sLeftIconWidth="60dp"
+        app:sLeftTextColor="@color/comm_black"
+        app:sLeftTextSize="14sp"
+        app:sLeftViewGravity="left_center"
+        app:sRightTextSize="14sp"
+        app:sUseRipple="false" />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+    <!-- Default -->
+    <dimen name="padding_default">5dp</dimen>
+
+    <dimen name="infor_height">45dp</dimen>
+    <dimen name="title_width">90dp</dimen>
+    <!-- Products -->
+    <dimen name="height_list">90dp</dimen>
+    <dimen name="size_list_image_width">120dp</dimen>
+    <dimen name="size_list_image_height">90dp</dimen>
+    <dimen name="font_size_title">13sp</dimen>
+    <dimen name="font_size_description">12sp</dimen>
+
+    <!--新增-->
+    <dimen name="common_textsize_small">13.0sp</dimen>
+    <dimen name="common_textsize_mid">16.0sp</dimen>
+    <dimen name="about_text_vertical_space">3.0dip</dimen>
+
+    <dimen name="register_input_text_height">40dip</dimen>
+    <dimen name="height_40dip">40dip</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="text_10sp">10sp</dimen>
+
+    <!-- 字体大小 ，系统默认值 -->
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <!-- 间距值,宽度,高度 -->
+    <dimen name="space_0">0dp</dimen>
+    <dimen name="space_1">1dp</dimen>
+    <dimen name="space_2">2dp</dimen>
+    <dimen name="space_3">3dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_5">5dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_13">13dp</dimen>
+    <dimen name="space_14">14dp</dimen>
+    <dimen name="space_15">15dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_25">25dp</dimen>
+    <dimen name="space_30">30dp</dimen>
+    <dimen name="space_35">35dp</dimen>
+    <dimen name="space_40">40dp</dimen>
+    <dimen name="space_45">45dp</dimen>
+    <dimen name="space_50">50dp</dimen>
+    <dimen name="space_54">54dp</dimen>
+    <dimen name="space_55">55dp</dimen>
+    <dimen name="space_60">60dp</dimen>
+    <dimen name="space_70">70dp</dimen>
+    <dimen name="space_80">80dp</dimen>
+    <dimen name="space_85">85dp</dimen>
+    <dimen name="space_90">90dp</dimen>
+    <dimen name="space_95">95dp</dimen>
+    <dimen name="space_100">100dp</dimen>
+    <dimen name="space_120">120dp</dimen>
+    <dimen name="space_130">130dp</dimen>
+    <dimen name="space_140">140dp</dimen>
+    <dimen name="space_150">150dp</dimen>
+    <dimen name="space_160">160dp</dimen>
+    <dimen name="space_170">170dp</dimen>
+    <dimen name="space_180">180dp</dimen>
+    <dimen name="space_200">200dp</dimen>
+
+    <!-- px -->
+    <dimen name="space_65">65dp</dimen>
+    <dimen name="space_75">75dp</dimen>
+
+
+    <dimen name="home_menu_margin_5">5dip</dimen>
+    <dimen name="home_menu_margin_8">8dip</dimen>
+    <dimen name="margin_10">10dip</dimen>
+
+</resources>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bg_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/space_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_import_text"
+                        android:text="施工机房"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_pcs"
+                        android:maxLength="12"
+                        android:hint="请选择施工机房"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_gly"
+                android:layout_height="wrap_content"
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_import_text"
+                        android:text="@string/machine_gly"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_gly"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_import_text"
+                        android:text="@string/machine_room_type"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_room_type"
+                        android:hint="请选择施工类型"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_import_text"
+                        android:text="@string/machine_check_person"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_check_person"
+                        android:hint="请选择审批人"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_import_text"
+                        android:text="@string/machine_sq_gs"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_sq_gs"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_import_text"
+                        android:text="@string/machine_sq_xm"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_sq_xm"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_import_text"
+                        android:text="@string/machine_sq_dh"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_sq_dh"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--LinearLayout 第一层布局  -->
+            <LinearLayout
+                style="@style/collect_first_linear">
+                <!--LinearLayout 第二层布局右边采集类提示  -->
+                <LinearLayout
+                    style="@style/collect_left_linear">
+                    <!--TextView 右边菜单-->
+                    <TextView
+                        style="@style/collect_left_import_text"
+                        android:text="@string/machine_sq_dqsj"/>
+                    <!--TextView  底部线 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_short_blue"/>
+                </LinearLayout>
+                <!--LinearLayout 第二层布局左边采集  -->
+                <LinearLayout
+                    style="@style/collect_right_linear">
+                    <!--EditText  左边输入框-->
+                    <TextView
+                        android:id="@+id/tv_sgwcsj"
+                        android:hint="请选择完成时间（时间到期本次申请将过期）"
+                        style="@style/collect_right_text"
+                        />
+                    <!--TextView 左边输入框底部线条 -->
+                    <TextView
+                        style="@style/collect_left_bottom"
+                        android:background="@drawable/line_long_blue"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_120"
+                android:background="@android:color/background_light"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/space_1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_sfz"
+                        android:layout_width="@dimen/space_100"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dr_camear"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="手持机房出入证照片"
+                        android:textSize="@dimen/text_size_12"
+                        android:gravity="center"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="0.2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--
+
+                        &lt;!&ndash;LinearLayout 第一层布局  &ndash;&gt;
+                        <LinearLayout
+                            style="@style/collect_first_linear">
+                            &lt;!&ndash;LinearLayout 第二层布局右边采集类提示  &ndash;&gt;
+                            <LinearLayout
+                                style="@style/collect_left_linear">
+                                &lt;!&ndash;TextView 右边菜单&ndash;&gt;
+                                <TextView
+                                    style="@style/collect_left_import_text"
+                                    android:text="同行人员数量"/>
+                                &lt;!&ndash;TextView  底部线 &ndash;&gt;
+                                <TextView
+                                    style="@style/collect_left_bottom"
+                                    android:background="@drawable/line_short_blue"/>
+                            </LinearLayout>
+                            &lt;!&ndash;LinearLayout 第二层布局左边采集  &ndash;&gt;
+                            <LinearLayout
+                                style="@style/collect_right_linear">
+                                &lt;!&ndash;EditText  左边输入框&ndash;&gt;
+                                <EditText
+                                    android:id="@+id/et_follow_person"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    style="@style/collect_right_text"
+                                    />
+                                &lt;!&ndash;TextView 左边输入框底部线条 &ndash;&gt;
+                                <TextView
+                                    style="@style/collect_left_bottom"
+                                    android:background="@drawable/line_long_blue"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+            -->
+<include layout="@layout/textview_fill_width"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dip"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/space_0"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/space_12"
+                        android:text="同行人员信息"
+                        android:textSize="@dimen/text_size_12"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_menu_add"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/iv_addfollow"
+                        android:text="增加同行人员"
+                        android:background="@color/blue"
+                        android:src="@drawable/ic_menu_add"
+                        android:textSize="@dimen/text_size_12"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/space_0"
+                        android:layout_weight="0.15"/>
+                </LinearLayout>
+
+                <include layout="@layout/textview_fill_width"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <cn.net.xinyi.xmjt.utils.View.LinearLayoutForListView
+                        android:id="@+id/lv_follow_person"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </cn.net.xinyi.xmjt.utils.View.LinearLayoutForListView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_boom"
+                android:paddingTop="@dimen/space_20"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_height="@dimen/space_90">
+                <Button
+                    android:id="@+id/btn_jf"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="施工申请"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_height="@dimen/space_50"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_green_light"
+                    />
+                <Button
+                    android:id="@+id/btn_qx"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="取消申请"
+                    android:visibility="gone"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_height="@dimen/space_50"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_red_light"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

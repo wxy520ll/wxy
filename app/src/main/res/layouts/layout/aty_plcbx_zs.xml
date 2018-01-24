@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        style="@style/collection_information_linerlayout"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_height="match_parent"
+            style="@style/collection_information_tv"
+            android:text="岗亭类别"/>
+
+        <TextView
+            android:id="@+id/tv_gtlb"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:maxLength="50"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        style="@style/collection_information_linerlayout"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_height="match_parent"
+            style="@style/collection_information_tv"
+            android:text="统一编号"/>
+
+        <TextView
+            android:id="@+id/tv_tybh"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:hint="正在定位中..."
+            android:maxLength="50"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        style="@style/collection_information_linerlayout"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/space_1"
+        >
+        <TextView
+            android:layout_height="match_parent"
+            style="@style/collection_information_tv"
+            android:text="地址"/>
+
+        <TextView
+            android:id="@+id/tv_dz"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:hint="正在定位中..."
+            android:maxLength="50"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_addfoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/lv_list"
+            android:layout_marginBottom="@dimen/space_40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+        </ListView>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_40"
+            layout="@layout/include_empty_data"></include>
+
+        <LinearLayout
+            android:id="@+id/ll_boom"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/background_light"
+            style="@style/collection_information_linerlayout">
+
+            <Button
+                android:id="@+id/btn_ks"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/start_working_plc_bx"
+                android:background="@android:color/holo_green_light"
+                android:textColor="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/btn_js"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/ending_work_plc_bx"
+                android:background="@android:color/holo_red_light"
+                android:textColor="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/btn_bb"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/bb_work_plc_bx"
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@android:color/white"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

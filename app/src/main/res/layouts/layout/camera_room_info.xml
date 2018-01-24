@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ebebeb">
+
+    <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:visibility="gone" />
+
+    <ScrollView
+            android:id="@+id/sv_collection"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="45dp"
+            android:layout_height="fill_parent">
+
+
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:orientation="vertical">
+
+
+            <LinearLayout
+                    android:id="@+id/ll_imgs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_140"
+                    android:background="@android:color/background_light"
+                    android:orientation="horizontal">
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_marginLeft="@dimen/space_1"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical">
+                    <ImageView
+                            android:id="@+id/iv_01"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/dr_camear"
+                            />
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:text="监控室全景图"
+                              android:gravity="center"
+                              android:textSize="@dimen/text_size_12"
+                              android:background="@android:color/background_light"
+                              android:layout_weight="0.16"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_marginLeft="@dimen/space_1"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical">
+
+                    <ImageView
+                            android:id="@+id/iv_02"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/dr_camear"
+                            />
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:text="所在门牌号"
+                              android:textSize="@dimen/text_size_12"
+                              android:gravity="center"
+                              android:background="@android:color/background_light"
+                              android:layout_weight="0.16"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:layout_marginLeft="@dimen/space_1"
+                              android:layout_height="match_parent"
+                              android:orientation="vertical">
+
+                    <ImageView
+                            android:id="@+id/iv_03"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/dr_camear"
+                            />
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:text="存储设备品牌"
+                              android:gravity="center"
+                              android:textSize="@dimen/text_size_12"
+                              android:background="@android:color/background_light"
+                              android:layout_weight="0.16"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          style="@style/collection_information_linerlayout">
+                <TextView  android:layout_height="match_parent"
+                           style="@style/collection_information_tv"
+                           android:text="监控室名称"
+                           android:drawableRight="@drawable/imporent"
+                        />
+
+
+                <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:maxLength="25"
+                        android:hint="请输入监控室名称"
+                        style="@style/tv_search_bg"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          style="@style/collection_information_linerlayout">
+                <TextView  android:layout_height="match_parent"
+                           style="@style/collection_information_tv"
+                           android:text="业务分类"
+                           android:drawableRight="@drawable/imporent"
+                        />
+
+                <TextView
+                        android:id="@+id/tv_ywfl"
+                        android:layout_width="0dp"
+                        android:hint="请选择业务分类"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        style="@style/tv_search_bg"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    style="@style/collection_information_linerlayout"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+
+                        android:layout_height="match_parent"
+                        style="@style/collection_information_tv"
+                        android:drawableRight="@drawable/imporent"
+                        android:text="监控室位置"/>
+
+
+
+                <EditText
+                        android:id="@+id/tv_collection_posioion_jks"
+                        android:layout_width="0dp" android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:hint="正在定位中..."
+                        android:maxLength="50"
+                        style="@style/tv_search_bg"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    style="@style/collection_information_linerlayout"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/imporent"
+                        android:layout_weight="0.56"
+                        style="@style/collection_information_tv"
+                        android:text="经纬度坐标"/>
+
+                <TextView
+                        android:hint="正在定位中...."
+                        android:id="@+id/tv_collection_gps_jks"
+                        android:layout_width="0dp" android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        style="@style/tv_search_bg"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+                <TextView
+                        android:id="@+id/tv_collection_position_shoudong"
+                        android:text="手动定位"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/white"
+                        android:layout_height="match_parent"
+                        android:background="#428bcb"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+
+                        android:gravity="center"
+                        />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          style="@style/collection_information_linerlayout"
+                          android:orientation="horizontal"
+                    >
+
+                <TextView  android:layout_height="match_parent"
+                           style="@style/collection_information_tv"
+                           android:drawableRight="@drawable/imporent"
+                           android:text="楼栋编码"/>
+
+
+
+                <EditText
+                        android:id="@+id/et_block_number"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:maxLength="19"
+                        style="@style/tv_search_bg"
+                        android:text="440307005"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          style="@style/collection_information_linerlayout"
+                          android:orientation="horizontal"
+                    >
+                <TextView android:layout_height="match_parent"
+                          style="@style/collection_information_tv"
+                          android:drawableRight="@drawable/imporent"
+                          android:text="摄像头数量"/>
+
+
+                <EditText
+                        android:id="@+id/et_camera_num"
+                        android:layout_width="0dp" android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        style="@style/tv_search_bg"
+                        android:inputType="number"
+                        android:hint="请输入摄像头数量"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          style="@style/collection_information_linerlayout">
+                <TextView  android:layout_height="match_parent"
+                           style="@style/collection_information_tv"
+                           android:drawableRight="@drawable/imporent"
+                           android:text="正常使用摄像头数量"/>
+
+
+                <EditText
+                        android:id="@+id/et_camera_num_normal"
+                        android:layout_width="0dp" android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:inputType="number"
+                        android:hint="请输入正常使用摄像头数量"
+                        style="@style/tv_search_bg"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          style="@style/collection_information_linerlayout"
+                          android:orientation="horizontal"
+                    >
+                <TextView android:layout_height="match_parent"
+                          style="@style/collection_information_tv"
+                          android:text="安装摄像头时间"/>
+
+
+                <TextView
+                        android:id="@+id/tv_collection_azdata_jks"
+                        android:hint="请选择摄像头安装时间"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        style="@style/tv_search_bg"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          style="@style/collection_information_linerlayout"
+                          android:orientation="horizontal"
+                    >
+
+                <TextView android:layout_height="match_parent"
+                          style="@style/collection_information_tv"
+                          android:drawableRight="@drawable/imporent"
+                          android:text="持证上岗人数"/>
+
+                <EditText
+                        android:id="@+id/et_certificates_number"
+                        android:layout_width="0dp" android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:inputType="number"
+                        android:hint="请输入持证上岗人数"
+                        style="@style/tv_search_bg"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          style="@style/collection_information_linerlayout"
+                          android:orientation="horizontal"
+                    >
+                <TextView  android:layout_height="match_parent"
+                           style="@style/collection_information_tv"
+                           android:drawableRight="@drawable/imporent"
+                           android:text="责任人"/>
+
+
+
+                <EditText
+                        android:id="@+id/et_trustee"
+                        android:layout_width="0dp" android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        style="@style/tv_search_bg"
+                        android:hint="请输入责任人"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          style="@style/collection_information_linerlayout"
+                          android:orientation="horizontal"
+                    >
+                <TextView  android:layout_height="match_parent"
+                           style="@style/collection_information_tv"
+                           android:drawableRight="@drawable/imporent"
+                           android:text="联系电话"/>
+
+
+                <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="0dp" android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:inputType="phone"
+                        android:hint="请输入正确的联系电话"
+                        style="@style/tv_search_bg"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          style="@style/collection_information_linerlayout"
+                          android:orientation="horizontal"
+                    >
+                <TextView android:layout_height="match_parent"
+                          style="@style/collection_information_tv"
+                          android:drawableRight="@drawable/imporent"
+                          android:text="所属派出所"/>
+
+
+                <TextView
+                        android:id="@+id/tv_collecion_pcs"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:hint="请选择所在的派出所"
+                        style="@style/tv_search_bg"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          style="@style/collection_information_linerlayout"
+                          android:orientation="horizontal"
+                    >
+                <TextView android:layout_height="match_parent"
+                          style="@style/collection_information_tv"
+                          android:drawableRight="@drawable/imporent"
+                          android:text="所属网格"/>
+
+
+                <TextView
+                        android:id="@+id/tv_wangge"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:hint="请选择所属网格"
+                        style="@style/tv_search_bg"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          style="@style/collection_information_linerlayout"
+                          android:orientation="horizontal"
+                    >
+                <TextView android:layout_height="match_parent"
+                          style="@style/collection_information_tv"
+                          android:text="视频存储设备厂商"/>
+
+
+                <EditText
+                        android:id="@+id/et_save_company"
+                        android:layout_width="0dp" android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        style="@style/tv_search_bg"
+                        android:hint="请输入视频存储设备厂商"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          style="@style/collection_information_linerlayout"
+                          android:orientation="horizontal"
+                    >
+                <TextView android:layout_height="match_parent"
+                          style="@style/collection_information_tv"
+                          android:text="备注："/>
+
+
+                <EditText
+                        android:id="@+id/et_remarks"
+                        android:layout_width="0dp" android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        style="@style/tv_search_bg"
+                        android:hint="备注"
+                        android:background="@android:color/background_light"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+            android:id="@+id/btn_savelocal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:text="本地缓存"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:background="#428bcb"
+            android:textColor="@android:color/white"
+            />
+    <include layout="@layout/image_from_camera_or_photos"></include>
+
+
+
+</RelativeLayout>

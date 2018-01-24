@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">龙岗协警助手</string>
+    <string name="app_fullname">龙岗协警助手</string>
+    <string name="app_version">V1.0</string>
+    <string name="app_copyright">Copyright@ 2017 深圳市信义科技有限公司</string>
+    <string name="title_app_version">软件版本</string>
+    <string name="title_app_name">软件名称</string>
+    <string name="title_app_copyright">版权声明</string>
+    <string name="SUBS_NAME">龙岗分局</string>
+    <string name="SUBS_ID">440307000000</string>
+    <string name="msg_scan_fail">扫码失败</string>
+    <string name="msg_scan_login_title">windows 登录确认</string>
+    <string name="msg_scan_login_success">Windows端登录成功</string>
+    <string name="msg_scan_login_fail">Windows端登录失败</string>
+    <string name="msg_scan_error">请扫描龙岗协警助手二维码</string>
+
+</resources>

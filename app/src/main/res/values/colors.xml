@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2013 47 Degrees, LLC
+  ~  http://47deg.com
+  ~  hello@47deg.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  -->
+
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="divide_line">#f7f7f7</color>
+    <color name="yellow">#D9D919</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+
+    <color name="bbutton_danger">#ffd9534f</color>
+    <color name="red">#ff6363</color>
+
+
+    <color name="bbutton_success">#ff5cb85c</color>
+
+
+    <color name="bbutton_warning_edge">#ffeea236</color>
+    <color name="bbutton_warning_pressed">#ff8e50</color>
+
+    <color name="bthumbnail_font">#7e7e7e</color>
+
+    <!-- Commons -->
+    <color name="background_list_front">#ffffff</color>
+    <color name="text_title">#444444</color>
+    <color name="text_description">#7e7e7e</color>
+    <color name="line">#ffbcbcbc</color>
+    <color name="background_new_tag">#ff0000</color>
+    <color name="text_color_black">#2a1001</color>
+    <color name="bg_dark">#ececec</color>
+    <color name="blue1">#476bde</color>
+    <color name="blue">#428bcb</color>
+
+    <color name="text_dark">#666666</color>
+    <color name="green">#359a2b</color>
+    <color name="text_black">#333333</color>
+
+
+    <!-- 透明 -->
+
+
+    <!-- 答题 -->
+    <color name="practice_test_no_text">#2b89e9</color>
+    <color name="practice_test_result_text">#9a9a9a</color>
+    <color name="lucky_text_red">#e43b1c</color>
+
+    <color name="main_bg">#288df5</color>
+    <color name="menu_bottom_text">#f2f8ff</color>
+    <color name="info_layout_bg">#eaeaea</color>
+    <color name="black_text">#FF18191A</color>
+    <color name="comm_blue">#2196F3</color>
+
+
+</resources>

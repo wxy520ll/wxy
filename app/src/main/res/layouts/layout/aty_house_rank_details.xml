@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="类别"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+            <include layout="@layout/textview_full_height"></include>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="花园小区"
+                style="@style/rank_text_style" />
+
+            <include layout="@layout/textview_full_height"></include>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="match_parent"
+                android:text="城中村小区"
+                style="@style/rank_text_style" />
+            <include layout="@layout/textview_full_height"></include>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="工厂企业宿舍"
+                style="@style/rank_text_style"/>
+
+            <include layout="@layout/textview_full_height"></include>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="小产权房屋"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="四防采集总数"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/CJSZ_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/CJSZ_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/CJSZ_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/CJSZ_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="开通居住证登记账号"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFKTJZDJZH_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFKTJZDJZH_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFKTJZDJZH_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFKTJZDJZH_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="住宅楼栋数"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/ZZLDS_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/ZZLDS_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/ZZLDS_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/ZZLDS_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="保安员数量"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/BAYSL_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/BAYSL_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/BAYSL_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/BAYSL_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="巡逻保安人数"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/XLBARS_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/XLBARS_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/XLBARS_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/XLBARS_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="业主管理"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYZGL_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYZGL_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFYZGL_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFYZGL_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+
+        <include layout="@layout/textview_fill_width"></include>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="门岗数量"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/MGSL_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/MGSL_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/MGSL_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/MGSL_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="房屋有消防器材"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/FWSFYXFQC_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/FWSFYXFQC_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/FWSFYXFQC_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/FWSFYXFQC_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="爬水管安装爬刺和涂抹黄油"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/PSGSFAZPCHTMHY_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/PSGSFAZPCHTMHY_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/PSGSFAZPCHTMHY_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/PSGSFAZPCHTMHY_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="安装防盗门"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFAZFDM_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFAZFDM_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFAZFDM_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFAZFDM_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="锁芯B级锁"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SXSFBJS_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SXSFBJS_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SXSFBJS_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SXSFBJS_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="消防水阀完好"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/XFSZSFWH_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/XFSZSFWH_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/XFSZSFWH_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/XFSZSFWH_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="配备楼栋服务站"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFPBLDFWZ_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFPBLDFWZ_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFPBLDFWZ_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFPBLDFWZ_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="配备楼栋长"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFPBLDZ_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFPBLDZ_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFPBLDZ_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFPBLDZ_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="配备管理员"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYGLY_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYGLY_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFYGLY_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFYGLY_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="配备灭火器"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYMHQ_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYMHQ_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFYMHQ_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFYMHQ_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="与派出所联网"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYPCSLW_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYPCSLW_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFYPCSLW_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFYPCSLW_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="配备物业管理公司"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYWYGLGS_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYWYGLGS_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFYWYGLGS_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFYWYGLGS_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="配备应急照明灯"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYYJZMD_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFYYJZMD_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFYYJZMD_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFYYJZMD_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="安装视门禁"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFAZSPMJ_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFAZSPMJ_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFAZSPMJ_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFAZSPMJ_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="门禁是否双向刷卡"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/MJSFSXSK_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/MJSFSXSK_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/MJSFSXSK_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/MJSFSXSK_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="门禁损坏数量"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/MJSHSL_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/MJSHSL_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/MJSHSL_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/MJSHSL_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="安装单机视频门禁"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFAZDJSPMJ_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFAZDJSPMJ_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFAZDJSPMJ_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFAZDJSPMJ_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="公共区域探头数量"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/GGQYTTSL_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/GGQYTTSL_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/GGQYTTSL_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/GGQYTTSL_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="高清探头数量"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/GQTTSL_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/GQTTSL_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/GQTTSL_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/GQTTSL_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="普通探头数量"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/PTTTSL_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/PTTTSL_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/PTTTSL_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/PTTTSL_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="视频损坏数量"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SPSHSL_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SPSHSL_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SPSHSL_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SPSHSL_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="周围外墙安装摄像头"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/ZWWQSFAZTT_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/ZWWQSFAZTT_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/ZWWQSFAZTT_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/ZWWQSFAZTT_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/background_light">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="安装与派出所联网一键报警"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFAZYPCSLWDYJBJ_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+
+            <TextView
+                android:id="@+id/SFAZYPCSLWDYJBJ_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+
+            <TextView
+                android:id="@+id/SFAZYPCSLWDYJBJ_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style"/>
+
+
+            <TextView
+                android:id="@+id/SFAZYPCSLWDYJBJ_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/rank_text_style" />
+
+        </LinearLayout>
+
+        <include layout="@layout/textview_fill_width"></include>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ebebeb">
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_170"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_15"
+            android:text="下拉菜单->选择【开关】->选择【GPS】或【位置信息】" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/space_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginLeft="@dimen/space_60"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dr_gps"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/space_60"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_zp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dr_gps2"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View android:layout_width="1dp" android:layout_height="64dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

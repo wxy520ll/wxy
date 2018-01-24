@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:orientation="horizontal"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="@dimen/space_0"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="详情"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_qx"
+            android:text="X"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_weight="0.2"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/space_10"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_height="45dp"
+        android:background="@color/bg_dark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/imporent"
+            android:layout_weight="0.4"
+            style="@style/collection_information_tv"
+            android:text="最新状态"/>
+
+        <TextView
+            android:id="@+id/tv_yyzt"
+            android:layout_width="0dp"
+            android:maxLength="20"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"/>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_height="45dp"
+        android:background="@color/bg_dark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_yybh_1"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/imporent"
+            android:layout_weight="0.4"
+            style="@style/collection_information_tv"
+            android:text="预约编号"/>
+
+        <TextView
+            android:id="@+id/tv_yybh"
+            android:layout_width="0dp"
+            android:maxLength="20"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_height="45dp"
+        android:background="@color/bg_dark"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_yysj_1"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/imporent"
+            android:layout_weight="0.4"
+            style="@style/collection_information_tv"
+            android:text="预约时间"/>
+
+        <TextView
+            android:id="@+id/tv_yysj"
+            android:layout_width="0dp"
+            android:maxLength="20"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_height="45dp"
+        android:background="@color/bg_dark"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/imporent"
+            android:layout_weight="0.4"
+            style="@style/collection_information_tv"
+            android:text="房间编号"/>
+
+        <TextView
+            android:id="@+id/tv_fjbh"
+            android:layout_width="0dp"
+            android:maxLength="20"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_height="45dp"
+        android:background="@color/bg_dark"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/imporent"
+            android:layout_weight="0.4"
+            style="@style/collection_information_tv"
+            android:text="房间名称"/>
+
+        <TextView
+            android:id="@+id/tv_fjmc"
+            android:layout_width="0dp"
+            android:maxLength="20"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/textview_fill_width"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_height="45dp"
+        android:background="@color/bg_dark"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/imporent"
+            android:layout_weight="0.4"
+            style="@style/collection_information_tv"
+            android:text="房间面积"/>
+
+        <TextView
+            android:id="@+id/tv_fjmj"
+            android:layout_width="0dp"
+            android:maxLength="20"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_height="45dp"
+        android:background="@color/bg_dark"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/imporent"
+            android:layout_weight="0.4"
+            style="@style/collection_information_tv"
+            android:text="房间描述"/>
+
+        <TextView
+            android:id="@+id/tv_fjms"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/textview_fill_width"/>
+
+    <TextView
+        android:id="@+id/tv_qxyy"
+        android:visibility="gone"
+        android:layout_height="@dimen/space_50"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/space_70"
+        android:layout_marginLeft="@dimen/space_70"
+        android:background="@color/bbutton_danger"
+        android:textColor="@color/white"
+        android:text="取消预约"/>
+
+</LinearLayout>

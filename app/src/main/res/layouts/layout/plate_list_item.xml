@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_dark" >
+
+    <LinearLayout
+        android:id="@+id/back"
+        style="@style/ListBackContent"
+        android:tag="back" >
+
+        <Button
+            android:id="@+id/btn_item_edit"
+            style="@style/ListButtonAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="编辑"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_item_del"
+            style="@style/ListButtonAction"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="删除" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/front"
+        style="@style/ListFrontContent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:tag="front" >
+
+        <ImageView
+            android:id="@+id/plate_detail_image"
+            style="@style/ListImage" />
+
+        <TextView
+            android:id="@+id/plate_detail_number"
+            style="@style/ListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/plate_detail_image" />
+
+        <TextView
+            android:id="@+id/plate_detail_time"
+            style="@style/ListDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plate_detail_number"
+            android:layout_toRightOf="@id/plate_detail_image" />
+
+        <TextView
+            android:id="@+id/plate_detail_gps"
+            style="@style/ListDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plate_detail_time"
+            android:layout_toRightOf="@id/plate_detail_image" />
+
+        <TextView
+            android:id="@+id/plate_detail_cellid"
+            style="@style/ListDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plate_detail_gps"
+            android:layout_toRightOf="@id/plate_detail_image" />
+
+        <Button
+            android:id="@+id/plate_detail_status"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/file_wait_upload" />
+
+        <TextView
+            android:id="@+id/plate_detail_statustext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plate_detail_status"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/ListDescription"
+            android:text="已上传"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+</FrameLayout>

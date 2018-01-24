@@ -1,0 +1,49 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url "https://www.jitpack.io"
+        }
+    }
+    dependencies {
+       classpath 'com.android.tools.build:gradle:2.3.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+allprojects {
+    repositories {
+        maven {
+            name "aliyunmaven"
+            url "http://maven.aliyun.com/nexus/content/groups/public/"
+        }
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "https://dl.bintray.com/freedom/maven/" }
+        maven { url 'http://dl.bintray.com/amulyakhare/maven' }
+    }
+}
+
+ext {
+    // Sdk and tools
+    /*  buildToolsVersion = "25.0.3"
+      compileSdkVersion = 25
+      minSdkVersion = 19
+      targetSdkVersion = 22
+      versionCode = 20171221
+      versionName = "1.08"+new Date().format(".yyyyMMdd")
+  */
+    //android
+    //supportLibraryVersion = '25.3.1'
+
+    PRODUCT_HOST = "\"219.134.134.156\""
+    PRODUCT_PORT = "\"8088\""
+
+    DEV_HOST = "\"183.62.140.8\""
+    DEV_PORT = "\"8080\""
+
+    //  xinyi_comm='2.2.6'
+
+}

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@android:color/background_light"
+              android:layout_height="match_parent">
+
+<TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:gravity="center_vertical"
+          android:paddingLeft="20dp"
+        android:text="核查结果"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="#428bcb"
+
+      />
+
+    <LinearLayout
+            android:id="@+id/ll_pass_yes"
+            android:layout_gravity="center"
+            android:layout_height="60dip"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="确定核查通过，并上传核查结果"
+                android:textSize="17sp"
+                />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/ll_pass_no"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/background_light"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="1dp"
+                android:layout_height="45dp"
+                android:background="@color/bg_dark"
+                android:orientation="horizontal"
+                >
+            <TextView
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/imporent"
+                    android:layout_weight="0.4"
+                    style="@style/collection_information_tv"
+                    android:text="不通过原因"/>
+
+
+
+            <TextView
+                    android:hint="请选择不通过的原因"
+                    android:id="@+id/tv_resone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    style="@style/tv_search_bg"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/divider_horizontal_line"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="1dp"
+                android:layout_height="45dp"
+                android:background="@color/bg_dark"
+                android:orientation="horizontal"
+                >
+            <TextView
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    style="@style/collection_information_tv"
+                    android:text="补充说明"/>
+
+            <EditText
+                    android:hint="补充说明不通过原因"
+                    android:id="@+id/et_bz"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    style="@style/tv_search_bg"
+                    android:background="@android:color/background_light"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/divider_horizontal_line"/>
+
+          <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="60dp">
+            <Button
+                    android:id="@+id/menu_canel"
+                    android:layout_width="0dp"
+                  android:layout_weight="1"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="45dp"
+                    android:text="取消"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:background="#428bcb"
+                    android:textColor="@android:color/white"
+                    />
+
+                  <Button
+                    android:id="@+id/menu_sure"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="上传"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:background="#428bcb"
+                    android:textColor="@android:color/white"
+                    />
+          </LinearLayout>
+
+</LinearLayout>

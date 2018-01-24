@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="机房管理"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="#428bcb" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_height="45dp"
+        android:background="@color/bg_dark"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/imporent"
+            android:layout_weight="0.4"
+            style="@style/collection_information_tv"
+            android:text="所属单位"/>
+
+        <TextView
+            android:hint="请输入所属单位"
+            android:id="@+id/tv_ssdw"
+            android:layout_width="0dp"
+            android:maxLength="20"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/divider_horizontal_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_height="45dp"
+        android:background="@color/bg_dark"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/imporent"
+            android:layout_weight="0.4"
+            style="@style/collection_information_tv"
+            android:text="机房名称"/>
+
+        <EditText
+            android:hint="请输入机房名称"
+            android:id="@+id/et_jfmc"
+            android:layout_width="0dp"
+            android:maxLength="20"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            style="@style/tv_search_bg"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/divider_horizontal_line"/>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/divider_horizontal_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="45dp"
+            android:text="取消"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:background="#428bcb"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="添加"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:background="#428bcb"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+</LinearLayout>

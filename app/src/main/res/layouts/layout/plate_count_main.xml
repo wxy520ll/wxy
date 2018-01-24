@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_dark"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+            android:id="@+id/ll_organ_upload_total"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_70"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/space_1"
+            android:background="@drawable/bg_onclick"
+            >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rank_total"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_20"
+                />
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="汇总统计"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:textSize="@dimen/text_14sp"
+                android:layout_height="match_parent"/>
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_item_goto_right_tip"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/space_20"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_organ_upload_rank"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_70"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/space_1"
+            android:background="@drawable/bg_onclick"
+            >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rank_pcs"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_20"
+                />
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="单位上传排行"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:textSize="@dimen/text_14sp"
+                android:layout_height="match_parent"/>
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_item_goto_right_tip"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/space_20"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_user_upload_rank"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_70"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/space_1"
+            android:background="@drawable/bg_onclick"
+            >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rank_per_up"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_20"
+                />
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="个人上传排行"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:textSize="@dimen/text_14sp"
+                android:layout_height="match_parent"/>
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_item_goto_right_tip"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/space_20"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/ll_user_upload"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_70"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/space_1"
+            android:background="@drawable/bg_onclick"
+            >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rank_per"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_20"
+                />
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="个人上传统计"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/space_20"
+                android:textSize="@dimen/text_14sp"
+                android:layout_height="match_parent"/>
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_item_goto_right_tip"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/space_20"
+                />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

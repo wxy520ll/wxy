@@ -1,0 +1,1 @@
+include ':app', ':umengcommunity', ':aliFeedback', ':bugly_crashreport_upgrade'
